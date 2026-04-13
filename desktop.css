@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+.header{
+    background-color: rgb(19, 19, 61);
+ }
+
+.nav{
+     background-color: #003E74;
+     position: fixed;
+     width: 100%;
+     z-index: 100; 
+     display: flex;
+     flex-direction: row nowrap;
+     justify-content: space-between;
+ }
+
+ .menu{
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      border: 2px solid green;
+ }
+
+
+ .logo{
+   justify-content: flex-start;
+ }
+
+ .contato{
+   display: flex;
+   justify-content: flex-end;
+   background-color: gradient(45deg, #AE8625, #F7EF8A, #D2AC47);
+   color: white;
+   
+ }
+
+ body{
+    padding-top: 60px;
+ }
+
+ .footer{
+    background-color: #005197;
+    color: white;  
+    width: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .top-footer{
+   display: flex;
+   flex-flow: row nowrap;
+ }
+
+.rede-social{
+   background-color: transparent;
+   border: none;
+}
+
+.low-footer{
+   width: 90%;
+   align-items: center;
+}
+
+.hr{
+   max-width: 100%;
+}
