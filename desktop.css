@@ -61,8 +61,15 @@
  }
 
  .top-footer{
+   width: 100%;
    display: flex;
    flex-flow: row nowrap;
+   justify-content: space-around;
+   
+ }
+
+ .logo-footer{
+   width: 30%;
  }
 
 .rede-social{
