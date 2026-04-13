@@ -12,6 +12,10 @@
      display: flex;
      flex-direction: row nowrap;
      justify-content: space-between;
+     font-family: "League Spartan", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 200;
+      font-style: normal;
  }
 
  .menu{
@@ -50,7 +54,8 @@
  }
 
  .footer{
-    background-color: #005197;
+   margin: 0px 0px 0px 0px; 
+   background-color: #005197;
     color: white;  
     width: 100%;
 
@@ -65,13 +70,31 @@
    display: flex;
    flex-flow: row nowrap;
    justify-content: space-around;
-   
+   align-items: center;
+   text-align: center;
  }
 
  .logo-footer{
    width: 30%;
  }
 
+ .text-footer{
+   width: 30%;
+ }
+
+ .text-footer > h1{
+   font-family: "Michroma", sans-serif;
+   font-weight: 100;
+   font-style: normal;
+ }
+ 
+ .text-footer > p{
+   font-family: "League Spartan", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 200;
+   font-style: normal;
+ }
+ 
 .rede-social{
    background-color: transparent;
    border: none;
@@ -80,10 +103,37 @@
 .low-footer{
    width: 100%;
    align-items: center;
+   font-family: "League Spartan", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 200;
+   font-style: normal;
+}
+
+.low-footer > p{
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: center;
 }
 
 .hr{
-   max-width: 100%;
+   max-width: 95%;
 }
 
-/* comentario */
+.michroma-regular {
+  font-family: "Michroma", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.archivo-black-regular {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.league-spartan-uniquifier {
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
