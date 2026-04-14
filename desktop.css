@@ -18,18 +18,19 @@
      height: 10%;
      z-index: 100; 
      display: flex;
-     flex-direction: row nowrap;
+     flex-direction: row wrap;
      justify-content: space-between;
      font-family: "League Spartan", sans-serif;
-      font-optical-sizing: auto;
-      font-weight: 200;
-      font-style: normal;
+     font-optical-sizing: auto;
+     font-weight: 200;
+     font-style: normal;
      align-items: center;
-     padding: 0 5px;
+     width: 100%;
  }
 
  .logo{
     width: 5%;
+    padding: 0 0 0 40px;
  }
 
  .menu{
@@ -63,202 +64,183 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   background-color: #012640;
-   padding: 110px 0px 0px 0px;
  }
 
- .promocao > img{
-  max-width: 70%;
+ body{
+   width: 100%; 
+   margin: 0px;
+    background-color: #012640;
+    color: white;
+    
  }
 
-.sobre-nos{
-  width: 100%;
-  margin: 50px 0px;
-  
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-end;
-}
+/* pagina inicial */
+ .pagina-inicial{
+    margin: 50px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: center;
+ }
 
-.sobre-nos-texto{
-  width: 60%;
+ .pagina-inicial-left{
   display: flex;
-  flex-flow: column nowrap;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  text-align: left;
-  padding-left: 80px;
-}
-
-.sobre-nos-texto > h1{
-  font-size: 48px;
-}
-
-.sobre-nos-texto > p{
-  font-size: 30px;
-  width: 80%;
-  text-align: justify;
-}
-
-.sobre-nos-containerimg{
+  align-items: center;
+  padding: 20px;
   width: 40%;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 25px;
-}
+ }
 
-.sobre-nos-img{
+ .pagina-inicial-left > p{
+   font-weight: 200;
+ }
+
+ .button-agendamento{
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    gap: 5px;
+    width: 40%;
+ }
+
+ .titulo-principal > h1{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+ }
+
+ .button-agendamento > img{
+  width: 15%;
+ }
+
+ .pagina-inicial-left > img{
   width: 50%;
-  align-self: center;
-  border-radius: 15%;
-  transition: transform 0.2s ease;
-}
+ }
 
-.sobre-nos-img:hover{
-  transform: scale(1.05);
-}
-
-.diferenciais{
+ .pagina-inicial-right{
   display: flex;
-  flex-flow: column nowrap;
-  margin: 50px 0px;
-}
-
-.diferenciais-h1{
-  display: flex;
-  flex-flow: row nowrap;
+  flex-direction: row-reverse;
   justify-content: flex-start;
-  padding-left: 80px;
-}
+  width: 60%;
 
-.diferenciais-h1 > h1{
-  font-size: 48px;
-}
+ }
 
-.conteiner-diferenciais{
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-}
+ .pagina-inicial-right > img{
+  width: 70%;
+ }
 
-.diferencial-fora > div > p{
-  font-size: 22px;
-  width: 90%;
-  text-align: justify;
-  align-self: center;
-}
-
-.diferencial-fora{
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-between;
-  align-items: center;
-  width: 25%;
-}
-
-.diferencial-fora > div{
+ /* SERVIÇOS */
+ .servicos{
   display: flex;
   flex-flow: column;
-  justify-content: center;
-  text-align: center;
-  font-size: 13px;
-}
-
-.diferencial-dentro{
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-between;
   align-items: center;
-  width: 27%;
-}
-
-.diferencial-dentro > div{
-  display: flex;
-  flex-flow: column;
   justify-content: center;
-  text-align: center;
-  font-size: 13px;
-}
-
-.diferencial-dentro > div > p{
-  font-size: 22px;
-  width: 90%;
-  text-align: justify;
-  align-self: center;
-}
-
-.img-diferencial{
-  width: 75%;
-  align-self: center;
-  border-radius: 5%;
-  transition: transform 0.2s ease;
-}
-
-.img-diferencial:hover{
-  transform: scale(1.05);
-}
-
-.depoimentos{
-  display: flex;
-  flex-flow: column nowrap;
   margin: 50px 0px;
+  width: 100%
+ }
+
+ .servicos-card{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .card {
+    position: relative;
+    width: 300px; 
+    height: 200px;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 30px;
 }
 
-.title-dep{
+.imagem {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.sobreposicao {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; 
+    transition: opacity 0.5s ease; 
+}
+
+.card:hover .sobreposicao {
+    opacity: 1; 
+}
+
+.card:hover .imagem {
+    transform: scale(1.1); 
+}
+
+.button-saiba-mais{
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    gap: 5px;
+    width: 40%;
+}
+
+.servicos-saiba-mais{
+  width: 100%;
   display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
+  flex-flow: row;
+  padding: 110px 0px 0px 0px;
+}
+
+.servicos-left{
+  display: flex;
+  flex-flow: column;
   align-items: center;
+  justify-content: center;
+  width: 50%;
 }
 
-.title-dep > h1{
-font-size: 48px;
-}
-
-.title-dep > p{
-font-size: 30px;
-}
-
-.lista-dep{
+.preco{
   display: flex;
-  flex-flow: row nowrap;
-  color: black;
-  justify-content: space-evenly;
-  margin-top: 35px;
+  flex-flow: row;
+  align-items: flex-end;
+  gap: 10px;
 }
 
-.box-dep{
-  background-color: white;
-  width: 20%;
-  padding: 25px 15px;
-  border-radius: 5%;
-  transition: transform 0.2s ease;
-}
-
-.box-dep:hover{
-  transform: scale(1.05);
-}
-
-.top-dep{
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-  font-size: 18px;
-}
-
-.top-dep > img{
-  width: 40%;
+.imagem-saiba-mais{
+  width: 50%;
   height: 50%;
-  border-radius: 50%;
 }
 
-.data-dep{
-  color: gray;
-  font-size: 11px;
+.servicos-rigth{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
 }
 
+ /* footer */
  .footer{
    margin: 0px 0px 0px 0px; 
    background-color: #005197;
@@ -343,17 +325,3 @@ font-size: 30px;
   font-weight: weight;
   font-style: normal;
 }
-
-h1{
-  font-family: "Michroma", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-p{
-  font-family: "League Spartan", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
-}
-
