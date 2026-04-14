@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+ body{
+   width: 100%; 
+   margin: 0px;
+    background-color: #012640;
+    color: white; 
+ }
+
 .header{
     background-color: rgb(19, 19, 61);
  }
@@ -56,15 +63,201 @@
    display: flex;
    justify-content: center;
    align-items: center;
+   background-color: #012640;
+   padding: 110px 0px 0px 0px;
  }
 
- body{
-   width: 100%; 
-   margin: 0px;
-    background-color: #012640;
-    color: white;
-    
+ .promocao > img{
+  max-width: 70%;
  }
+
+.sobre-nos{
+  width: 100%;
+  margin: 50px 0px;
+  
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+}
+
+.sobre-nos-texto{
+  width: 60%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  padding-left: 80px;
+}
+
+.sobre-nos-texto > h1{
+  font-size: 48px;
+}
+
+.sobre-nos-texto > p{
+  font-size: 30px;
+  width: 80%;
+  text-align: justify;
+}
+
+.sobre-nos-containerimg{
+  width: 40%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 25px;
+}
+
+.sobre-nos-img{
+  width: 50%;
+  align-self: center;
+  border-radius: 15%;
+  transition: transform 0.2s ease;
+}
+
+.sobre-nos-img:hover{
+  transform: scale(1.05);
+}
+
+.diferenciais{
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 50px 0px;
+}
+
+.diferenciais-h1{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  padding-left: 80px;
+}
+
+.diferenciais-h1 > h1{
+  font-size: 48px;
+}
+
+.conteiner-diferenciais{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+
+.diferencial-fora > div > p{
+  font-size: 22px;
+  width: 90%;
+  text-align: justify;
+  align-self: center;
+}
+
+.diferencial-fora{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 25%;
+}
+
+.diferencial-fora > div{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 13px;
+}
+
+.diferencial-dentro{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 27%;
+}
+
+.diferencial-dentro > div{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 13px;
+}
+
+.diferencial-dentro > div > p{
+  font-size: 22px;
+  width: 90%;
+  text-align: justify;
+  align-self: center;
+}
+
+.img-diferencial{
+  width: 75%;
+  align-self: center;
+  border-radius: 5%;
+  transition: transform 0.2s ease;
+}
+
+.img-diferencial:hover{
+  transform: scale(1.05);
+}
+
+.depoimentos{
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 50px 0px;
+}
+
+.title-dep{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-dep > h1{
+font-size: 48px;
+}
+
+.title-dep > p{
+font-size: 30px;
+}
+
+.lista-dep{
+  display: flex;
+  flex-flow: row nowrap;
+  color: black;
+  justify-content: space-evenly;
+  margin-top: 35px;
+}
+
+.box-dep{
+  background-color: white;
+  width: 20%;
+  padding: 25px 15px;
+  border-radius: 5%;
+  transition: transform 0.2s ease;
+}
+
+.box-dep:hover{
+  transform: scale(1.05);
+}
+
+.top-dep{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  font-size: 18px;
+}
+
+.top-dep > img{
+  width: 40%;
+  height: 50%;
+  border-radius: 50%;
+}
+
+.data-dep{
+  color: gray;
+  font-size: 11px;
+}
 
  .footer{
    margin: 0px 0px 0px 0px; 
@@ -150,3 +343,17 @@
   font-weight: weight;
   font-style: normal;
 }
+
+h1{
+  font-family: "Michroma", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p{
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
