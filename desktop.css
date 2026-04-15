@@ -29,7 +29,7 @@
  }
 
  .logo{
-    width: 5%;
+    width: 15%;
     padding: 0 0 0 40px;
  }
 
@@ -40,10 +40,15 @@
 
  }
 
+ .nav > a{
+  display: flex;
+  gap: 30px;
+ }
+
  .menu > a{
    text-decoration: none;
    color: white;
-   font-size: larger;
+   font-size: 20px;
    padding: 18px;
    transition: transform 0.2s ease;
 }
