@@ -45,7 +45,12 @@
    color: white;
    font-size: larger;
    padding: 18px;
- }
+   transition: transform 0.2s ease;
+}
+
+.menu > a:hover{
+  transform: scale(1.2);
+}
 
  .contato{
    display: flex;
@@ -57,7 +62,13 @@
    font-size: large;
    width: 10%;
    height: 60%;
- }
+   margin-right: 10px;
+   transition: transform 0.2s ease;
+}
+
+.contato:hover{
+  transform: scale(1.1);
+}
 
 
  .promocao{
@@ -107,7 +118,12 @@
     padding: 5px;
     gap: 5px;
     width: 40%;
- }
+    transition: transform 0.2s ease;
+}
+
+.button-agendamento:hover{
+  transform: scale(1.15);
+}
 
  .titulo-principal > h1{
     display: flex;
@@ -180,6 +196,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     opacity: 0; 
     transition: opacity 0.5s ease; 
 }
@@ -534,7 +551,20 @@ h1{
   font-style: normal;
 }
 
+h3{
+  font-family: "Michroma", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 p{
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+a{
   font-family: "League Spartan", sans-serif;
   font-optical-sizing: auto;
   font-weight: weight;
