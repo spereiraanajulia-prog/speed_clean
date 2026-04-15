@@ -16,36 +16,54 @@
             <img src="images/logo_header.png" alt="logo_clara" class="logo">
     
             <div class="menu">
-                <a href="#">Home</a>
-                <a href="#">Sobre Nós</a>
-                <a href="#">Serviços</a>
-                <a href="#">Diferenciais</a>
+                <a href="index.html">Home</a>
+                <a href="#sobre-nos">Sobre Nós</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#diferenciais">Diferenciais</a>
             </div>
 
             <div class="contato"><img src="images/call.png" alt="contato">Contato</div>
         </div>
     </header>
 
-    <section class="servicos-saiba-mais">
-        <h1>Lavagem Técnica Profissional</h1>
-        <div class="servicos-left">
-            <img src="images/image1-card.jpg" alt="Card 1" class="imagem-saiba-mais">
-            <div class="preco">
-                <h1>129,</h1>
-                <p>90</p>
-            </div>
-            
+  <section class="agendamento">
+        <div class="agendamentos-left">
+            <img src="images/logo.png" alt="logo branca">
+            <h1>Agende Seu Serviço De Preferência</h1>
+            <p>Descreva o serviço e envie foto(s) pelo WhatsApp para avaliação precisa.</p>
         </div>
+        
+        <div class="formulario">
+            <h1>agende seu serviço</h1>
+            <div class="formulario-branco">
+                <form method="post">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                    <br><br>
 
-        <div class="servicos-rigth">
-                <ul>
-                    <li>Limpeza profunda: Remoção de contaminantes sem agredir a pintura.</li>
-                    <li>Produtos pH Neutro: Uso de shampoos e espumas de alta performance.</li>
-                    <li>Cuidado nos detalhes: Atenção especial a caixas de rodas, emblemas e frisos.</li>
-                    <li>Secagem segura: Utilização de toalhas de microfibra de alta absorção para evitar riscos.</li>
-                </ul>
+                    <label for="telefone">Telefone/WhatsApp</label>
+                    <input type="number" id="email" name="telefone" placeholder="Digite seu número sem traços" required>
+                    <br><br>
+
+                    <p>Serviço de interesse:</p>
+                    <input type="checkbox" id="lavagem" name="interesse" value="servico" >
+                    <label for="esporte">Lavagem Técnica Profissional</label><br>
+
+                    <input type="checkbox" id="pintura" name="interesse" value="servico">
+                    <label for="musica">Correção de Pintura e Polimento</label>
+                    <br><br>
+
+                    <input type="checkbox" id="higienizacao" name="interesse" value="servico">
+                    <label for="esporte">Higienização Interna e Detalhamento</label><br>
+                    <br><br>
+                    <input type="checkbox" id="selagem" name="interesse" value="servico">
+                    <label for="musica"> Proteção de Pintura e Selagem</label>
+                    <br><br>
+                    <button type="submit">Enviar</button>
+                </form>
             </div>
-    </section>
+        </div>
+  </section>
 
     <section class="footer">
         <div class="top-footer">
@@ -54,7 +72,7 @@
                 <p>R. Onze de Junho, 1318 - Operário, Novo Hamburgo - RS</p>
                 <p>(51) 99677-6564</p>
                 <p>Segunda - Sábado · 08:00 - 18:00</p>
-            </div>
+            </div>  
             
                 <img src="images/logo.png" alt="logo-footer"  class="logo-footer">
             
