@@ -91,7 +91,7 @@
     width: 100%;
     display: flex;
     flex-direction: row wrap;
-    justify-content: center;
+    justify-content: space-between;
  }
 
  .pagina-inicial-left{
@@ -99,12 +99,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  text-align: center;
+  padding: 20px 20px 20px 80px;
   width: 40%;
  }
 
  .pagina-inicial-left > p{
    font-weight: 200;
+   font-size: 18px;
  }
 
  .button-agendamento{
@@ -136,19 +138,20 @@
  }
 
  .pagina-inicial-left > img{
-  width: 50%;
+  width: 40%;
  }
 
  .pagina-inicial-right{
   display: flex;
   flex-direction: row-reverse;
-  justify-content: flex-start;
+  justify-content: flex-end;
+  align-items: center;
   width: 60%;
 
  }
 
  .pagina-inicial-right > img{
-  width: 70%;
+  width: 60%;
  }
 
  /* SERVIÇOS */
@@ -156,25 +159,43 @@
   display: flex;
   flex-flow: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   margin: 50px 0px;
   width: 100%
  }
 
- .servicos-card{
-    width: 80%;
+ .servicos h1{
+  font-size: 50px;
+ }
+
+ .cards{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ }
+
+ .servicos-card-cima{
     display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .servicos-card-baixo{
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
  }
 
  .card {
     position: relative;
-    width: 300px; 
-    height: 200px;
+    width: 30%;
+    height: 30%;
     overflow: hidden;
     cursor: pointer;
     border-radius: 30px;
+    margin: 20px;
 }
 
 .imagem {
@@ -201,6 +222,11 @@
     transition: opacity 0.5s ease; 
 }
 
+.button-saiba-mais > a{
+  text-decoration: none;
+  color: white;
+}
+
 .card:hover .sobreposicao {
     opacity: 1; 
 }
@@ -225,36 +251,165 @@
 .servicos-saiba-mais{
   width: 100%;
   display: flex;
-  flex-flow: row;
+  flex-direction: column;
   padding: 110px 0px 0px 0px;
+  text-align: center;
+}
+
+.servicos-info{
+  display: flex;
+  flex-direction: row;
+}
+
+.h1-saiba-mais{
+  display: flex;
+  flex-direction: column;
 }
 
 .servicos-left{
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 50%;
+  border: 2px solid #D4AF37; 
+  border-radius: 30px; 
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+ background-color: transparent;
+  width: 30%;
+}
+
+.imagem-card1{
+  width: 100%;
+  border-radius: 30px;
+
 }
 
 .preco{
   display: flex;
   flex-flow: row;
   align-items: flex-end;
-  gap: 10px;
-}
-
-.imagem-saiba-mais{
-  width: 50%;
-  height: 50%;
+  font-size: 30px;
 }
 
 .servicos-rigth{
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 70%;
+
+}
+.informacoes{
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  justify-content: flex-start;
+  font-size: 20px;
+}
+
+.nossos-trabalhos{
+  width: 100%;
+  text-align: center;
+}
+
+.fotos-trabalhos{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.image-trabalho{
   width: 50%;
+  height: 100%;
+}
+
+.agendamento > img{
+  width: 30%;
+  height: 40%;
+}
+
+.botoes{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.botao-agendar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #D4AF37, #A67C00, #b38728);
+  border-radius: 30px;
+}
+
+.botao-voltar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #D4AF37, #A67C00, #b38728);
+  border-radius: 30px;
+  width: 100%;
+}
+
+.botao-agendar > a{
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+.botao-voltar > a{
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+.agendamento{
+  display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+}
+
+.agendamentos-left{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.agendamentos-left > img{
+  width: 30%;
+  height: 40%;
+  padding: 50px 0px 0px 0px;
+}
+
+.agendamentos-left > p{
+  font-size: 20px;
+  text-align: center;
+}
+
+.agendamentos-left > h1{
+  font-size: 40px;
+  text-align: center;
+}
+
+.formulario{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(15, 17, 143);
+  color: rgb(255, 255, 255);
+}
+
+.formulario-branco{
+   display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  width: 70%;
 }
 
  /* footer */
