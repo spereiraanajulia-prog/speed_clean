@@ -29,7 +29,8 @@
  }
 
  .logo{
-    width: 15%;
+    width: 70px;
+    height: 60px ;
     padding: 0 0 0 40px;
  }
 
@@ -42,7 +43,6 @@
 
  .nav > a{
   display: flex;
-  gap: 30px;
  }
 
  .menu > a{
@@ -73,6 +73,11 @@
 
 .contato:hover{
   transform: scale(1.1);
+}
+
+.contato > a{
+  text-decoration: none;
+  color: white;
 }
 
 
