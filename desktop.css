@@ -262,6 +262,8 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   padding: 110px 0px 0px 0px;
   text-align: center;
 }
@@ -269,11 +271,7 @@
 .servicos-info{
   display: flex;
   flex-direction: row;
-}
-
-.h1-saiba-mais{
-  display: flex;
-  flex-direction: column;
+  justify-content: space-between;
 }
 
 .servicos-left{
@@ -284,7 +282,7 @@
   border: 2px solid #D4AF37; 
   border-radius: 30px; 
   box-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
- background-color: transparent;
+  background-color: transparent;
   width: 30%;
 }
 
@@ -306,7 +304,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 70%;
+  padding: 0px 0px 0px 50px;
 
 }
 .informacoes{
@@ -320,6 +318,7 @@
 .nossos-trabalhos{
   width: 100%;
   text-align: center;
+  padding: 0px 0px 50px 0px;
 }
 
 .fotos-trabalhos{
@@ -332,6 +331,7 @@
 .image-trabalho{
   width: 50%;
   height: 100%;
+  border-radius: 30px;
 }
 
 .agendamento > img{
@@ -342,6 +342,8 @@
 .botoes{
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
 }
 
@@ -359,7 +361,6 @@
   justify-content: center;
   background: linear-gradient(to right, #D4AF37, #A67C00, #b38728);
   border-radius: 30px;
-  width: 100%;
 }
 
 .botao-agendar > a{
@@ -379,13 +380,15 @@
    justify-content: center;
    align-items: center;
    width: 100%;
+   padding: 100px 0px 0px 0px;
 }
 
 .agendamentos-left{
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px 30px 0px;
 }
 
 .agendamentos-left > img{
@@ -409,17 +412,56 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: rgb(15, 17, 143);
+  background-color: #004080; 
   color: rgb(255, 255, 255);
+  padding: 30px;
+  border-radius: 30px;
+  margin: 50px 50px 50px 50px;
 }
 
-.formulario-branco{
-   display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  width: 70%;
+.container-formulario {
+  padding: 30px;
+  border-radius: 20px;
+  width: 350px;
+}
+
+label {
+  display: block;
+  color: white;
+  margin-bottom: 5px;
+  font-size: 14px;
+  text-align: flex-start;
+}
+
+.campo {
+  margin-bottom: 20px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  box-sizing: border-box; 
+}
+
+.btn-confirmar {
+  background-color: #c5a044; 
+  color: white;
+  border: none;
+  padding: 12px 0;
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-confirmar:hover {
+  background-color: #a38535;
 }
 
  /* footer */
