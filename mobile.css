@@ -1,4 +1,8 @@
-@media (max-width: 768px){
+@media screen and (min-width: 400px) and (max-width: 768px){
+
+  .desktop{
+        display: none;
+    }
 
  body{
    width: 100%; 

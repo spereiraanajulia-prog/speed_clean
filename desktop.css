@@ -1,9 +1,13 @@
 @charset "UTF-8";
+@media screen and (min-width: 769px){
+  .mobile{
+        display: none;
+    }
 
  body{
    width: 100%; 
    margin: 0px;
-    background-color: #012640;
+    background-color: #000000;
     color: white; 
  }
 /* header */
@@ -799,3 +803,4 @@ a{
   font-weight: weight;
   font-style: normal;
 }
+  }
