@@ -104,8 +104,9 @@
     margin: 50px 0px;
     width: 100%;
     display: flex;
-    flex-direction: row wrap;
+    flex-direction: column ;
     justify-content: space-between;
+    align-items: center;
  }
 
  .pagina-inicial-left{
@@ -114,8 +115,9 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 20px 20px 20px 80px;
-  width: 40%;
+  
+  width: 100%;
+  
  }
 
  .pagina-inicial-left > p{
@@ -165,12 +167,12 @@
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  width: 60%;
+  width: 100%;
 
  }
 
  .pagina-inicial-right > img{
-  width: 70%;
+  width: 100%;
   height: 100%;
  }
 
@@ -581,7 +583,7 @@ input, select, textarea {
  }
 
  .promocao > img{
-  max-width: 70%;
+  max-width: 100%;
  }
 
 .sobre-nos{
