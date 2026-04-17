@@ -151,6 +151,11 @@
   width: 40%;
  }
 
+ .pagina-inicial-left> a{
+  text-decoration: none;
+  color: white;
+ }
+
  .pagina-inicial-right{
   display: flex;
   flex-direction: row-reverse;
@@ -452,16 +457,18 @@ input, select, textarea {
   border: none;
   padding: 12px 0;
   width: 60%;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0 auto;
   border-radius: 20px;
-  font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
 }
 
 .btn-confirmar:hover {
   background-color: #a38535;
+  transform: scale(1.1);
 }
 
  /* footer */
