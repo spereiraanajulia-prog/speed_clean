@@ -1,0 +1,803 @@
+@media (max-width: 768px){
+
+ body{
+   width: 100%; 
+   margin: 0px;
+    background-color: #012640;
+    color: white; 
+ }
+/* header */
+.header{
+    background-color: rgb(19, 19, 61);
+ }
+
+.nav{
+     background-color: #003E74;
+     position: fixed;
+     width: 100%;
+     height: 10%;
+     z-index: 100; 
+     display: flex;
+     flex-direction: row wrap;
+     justify-content: space-between;
+     font-family: "League Spartan", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 200;
+     font-style: normal;
+     align-items: center;
+     width: 100%;
+ }
+
+ .logo{
+    width: 70px;
+    height: 60px ;
+    padding: 0 0 0 40px;
+ }
+
+ .menu{
+      display: flex;
+      align-items: center;
+      gap: 30px;
+
+ }
+
+ .nav > a{
+  display: flex;
+ }
+
+ .menu > a{
+   text-decoration: none;
+   color: white;
+   font-size: 20px;
+   padding: 18px;
+   transition: transform 0.2s ease;
+}
+
+.menu > a:hover{
+  transform: scale(1.2);
+}
+
+ .contato{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: linear-gradient(to right, #D4AF37, #A67C00, #b38728);
+   border-radius: 20px;
+   color: white;
+   font-size: large;
+   width: 10%;
+   height: 60%;
+   margin-right: 10px;
+   transition: transform 0.2s ease;
+}
+
+.contato:hover{
+  transform: scale(1.1);
+}
+
+.contato > a{
+  text-decoration: none;
+  color: white;
+}
+
+
+ .promocao{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ body{
+   width: 100%; 
+   margin: 0px;
+    background-color: #012640;
+    color: white;
+    
+ }
+
+/* pagina inicial */
+ .pagina-inicial{
+    margin: 50px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: space-between;
+ }
+
+ .pagina-inicial-left{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px 20px 20px 80px;
+  width: 40%;
+ }
+
+ .pagina-inicial-left > p{
+   font-weight: 200;
+   font-size: 18px;
+ }
+
+ .button-agendamento{
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    gap: 5px;
+    width: 40%;
+    transition: transform 0.2s ease;
+}
+
+.button-agendamento:hover{
+  transform: scale(1.15);
+}
+
+ .titulo-principal > h1{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+ }
+
+ .button-agendamento > img{
+  width: 15%;
+ }
+
+ .pagina-inicial-left > img{
+  width: 40%;
+ }
+
+ .pagina-inicial-left> a{
+  text-decoration: none;
+  color: white;
+ }
+
+ .pagina-inicial-right{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 60%;
+
+ }
+
+ .pagina-inicial-right > img{
+  width: 70%;
+  height: 100%;
+ }
+
+ /* SERVIÇOS */
+ .servicos{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 50px 0px;
+  width: 100%
+ }
+
+ .servicos h1{
+  font-size: 50px;
+ }
+
+ .cards{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ }
+
+ .servicos-card-cima{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .servicos-card-baixo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .card {
+    position: relative;
+    width: 30%;
+    height: 30%;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 30px;
+    margin: 20px;
+}
+
+.imagem {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.sobreposicao {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0; 
+    transition: opacity 0.5s ease; 
+}
+
+.button-saiba-mais > a{
+  text-decoration: none;
+  color: white;
+}
+
+.card:hover .sobreposicao {
+    opacity: 1; 
+}
+
+.card:hover .imagem {
+    transform: scale(1.1); 
+}
+
+.button-saiba-mais{
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    gap: 5px;
+    width: 40%;
+}
+
+.servicos-saiba-mais{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 110px 0px 0px 0px;
+  text-align: center;
+}
+
+.servicos-info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.servicos-left{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #D4AF37; 
+  border-radius: 30px; 
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+  background-color: transparent;
+  width: 30%;
+}
+
+.imagem-card1{
+  width: 100%;
+  border-radius: 30px;
+
+}
+
+.preco{
+  display: flex;
+  flex-flow: row;
+  align-items: flex-end;
+  font-size: 30px;
+}
+
+.servicos-rigth{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 0px 0px 50px;
+}
+
+.servicos-rigth > h1{
+  margin: 40px;
+}
+
+.informacoes{
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  justify-content: flex-start;
+  font-size: 20px;
+}
+
+.nossos-trabalhos{
+  width: 100%;
+  text-align: center;
+  padding: 0px 0px 50px 0px;
+}
+
+.fotos-trabalhos{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.image-trabalho{
+  width: 50%;
+  height: 100%;
+  border-radius: 30px;
+}
+
+.agendamento > img{
+  width: 30%;
+  height: 40%;
+}
+
+.botoes{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 100px;
+}
+
+.botao-agendar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #D4AF37, #A67C00, #b38728);
+  border-radius: 30px;
+  height: 40%;
+  width: 100px;
+}
+
+.botao-voltar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #D4AF37, #A67C00, #b38728);
+  border-radius: 30px;
+  height: 40%;
+  width: 100px;
+}
+
+.botao-agendar > a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.botao-voltar > a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.agendamento{
+  display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   padding: 100px 0px 0px 0px;
+}
+
+.agendamentos-left{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px 30px 0px;
+}
+
+.agendamentos-left > img{
+  width: 30%;
+  height: 40%;
+  padding: 50px 0px 0px 0px;
+}
+
+.agendamentos-left > p{
+  font-size: 20px;
+  text-align: center;
+}
+
+.agendamentos-left > h1{
+  font-size: 40px;
+  text-align: center;
+}
+
+.formulario{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #004080; 
+  color: rgb(255, 255, 255);
+  padding: 30px;
+  border-radius: 30px;
+  margin: 50px 50px 50px 50px;
+}
+
+.container-formulario {
+  padding: 30px;
+  border-radius: 20px;
+  width: 350px;
+}
+
+label {
+  display: block;
+  color: white;
+  margin-bottom: 5px;
+  font-size: 14px;
+  text-align: flex-start;
+}
+
+.campo {
+  margin-bottom: 20px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  box-sizing: border-box; 
+}
+
+.btn-confirmar {
+  background-color: #c5a044; 
+  color: white;
+  border: none;
+  padding: 12px 0;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-confirmar:hover {
+  background-color: #a38535;
+  transform: scale(1.1);
+}
+
+ /* footer */
+ .footer{
+   margin: 0px 0px 0px 0px; 
+   background-color: #005197;
+    color: white;  
+    width: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .top-footer{
+   width: 100%;
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: space-around;
+   align-items: center;
+   text-align: center;
+ }
+
+ .logo-footer{
+   width: 30%;
+ }
+
+ .text-footer{
+   width: 30%;
+ }
+
+ .text-footer > h1{
+   font-family: "Michroma", sans-serif;
+   font-weight: 100;
+   font-style: normal;
+ }
+ 
+ .text-footer > p{
+   font-family: "League Spartan", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 200;
+   font-style: normal;
+ }
+ 
+.rede-social{
+   background-color: transparent;
+   border: none;
+}
+
+.low-footer{
+   width: 100%;
+   align-items: center;
+   font-family: "League Spartan", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 200;
+   font-style: normal;
+}
+
+.low-footer > p{
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: center;
+}
+
+.hr{
+   max-width: 95%;
+}
+
+.michroma-regular {
+  font-family: "Michroma", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.archivo-black-regular {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.league-spartan-uniquifier {
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+
+.promocao{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #012640;
+   padding: 110px 0px 0px 0px;
+ }
+
+ .promocao > img{
+  max-width: 70%;
+ }
+
+.sobre-nos{
+  width: 100%;
+  margin: 50px 0px;
+  
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+}
+
+.sobre-nos-texto{
+  width: 60%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  padding-left: 80px;
+}
+
+.sobre-nos-texto > h1{
+  font-size: 48px;
+}
+
+.sobre-nos-texto > p{
+  font-size: 30px;
+  width: 80%;
+  text-align: justify;
+}
+
+.sobre-nos-containerimg{
+  width: 40%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 25px;
+}
+
+.sobre-nos-img{
+  width: 50%;
+  align-self: center;
+  border-radius: 15%;
+  transition: transform 0.2s ease;
+}
+
+.sobre-nos-img:hover{
+  transform: scale(1.05);
+}
+
+.diferenciais{
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 50px 0px;
+}
+
+.diferenciais-h1{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  padding-left: 80px;
+}
+
+.diferenciais-h1 > h1{
+  font-size: 48px;
+}
+
+.conteiner-diferenciais{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+
+.diferencial-fora > div > p{
+  font-size: 22px;
+  width: 90%;
+  text-align: justify;
+  align-self: center;
+}
+
+.diferencial-fora{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 25%;
+}
+
+.diferencial-fora > div{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 13px;
+}
+
+.diferencial-dentro{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 27%;
+}
+
+.diferencial-dentro > div{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 13px;
+}
+
+.diferencial-dentro > div > p{
+  font-size: 22px;
+  width: 90%;
+  text-align: justify;
+  align-self: center;
+}
+
+.img-diferencial{
+  width: 75%;
+  align-self: center;
+  border-radius: 5%;
+  transition: transform 0.2s ease;
+}
+
+.img-diferencial:hover{
+  transform: scale(1.05);
+}
+
+.depoimentos{
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 50px 0px;
+}
+
+.title-dep{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-dep > h1{
+font-size: 48px;
+}
+
+.title-dep > p{
+font-size: 30px;
+}
+
+.lista-dep{
+  display: flex;
+  flex-flow: row nowrap;
+  color: black;
+  justify-content: space-evenly;
+  margin-top: 35px;
+}
+
+.box-dep{
+  background-color: white;
+  width: 20%;
+  padding: 25px 15px;
+  border-radius: 5%;
+  transition: transform 0.2s ease;
+}
+
+.box-dep:hover{
+  transform: scale(1.05);
+}
+
+.top-dep{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  font-size: 18px;
+}
+
+.top-dep > img{
+  width: 40%;
+  height: 50%;
+  border-radius: 50%;
+}
+
+.data-dep{
+  color: gray;
+  font-size: 11px;
+}
+
+
+h1{
+  font-family: "Michroma", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2{
+  font-family: "Michroma", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h3{
+  font-family: "Michroma", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p{
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+a{
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+}
