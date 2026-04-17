@@ -158,7 +158,7 @@
 
  .pagina-inicial-right{
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   justify-content: flex-end;
   align-items: center;
   width: 60%;
@@ -166,7 +166,8 @@
  }
 
  .pagina-inicial-right > img{
-  width: 60%;
+  width: 70%;
+  height: 100%;
  }
 
  /* SERVIÇOS */
@@ -310,8 +311,12 @@
   align-items: center;
   justify-content: center;
   padding: 0px 0px 0px 50px;
-
 }
+
+.servicos-rigth > h1{
+  margin: 40px;
+}
+
 .informacoes{
   display: flex;
   flex-direction: column;
@@ -350,6 +355,7 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
+  height: 100px;
 }
 
 .botao-agendar{
@@ -358,6 +364,8 @@
   justify-content: center;
   background: linear-gradient(to right, #D4AF37, #A67C00, #b38728);
   border-radius: 30px;
+  height: 40%;
+  width: 100px;
 }
 
 .botao-voltar{
@@ -366,18 +374,20 @@
   justify-content: center;
   background: linear-gradient(to right, #D4AF37, #A67C00, #b38728);
   border-radius: 30px;
+  height: 40%;
+  width: 100px;
 }
 
 .botao-agendar > a{
   text-decoration: none;
   color: white;
-  font-size: 14px;
+  font-size: 20px;
 }
 
 .botao-voltar > a{
   text-decoration: none;
   color: white;
-  font-size: 14px;
+  font-size: 20px;
 }
 
 .agendamento{
