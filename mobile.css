@@ -10,6 +10,7 @@
     background-color: #012640;
     color: white; 
  }
+ 
 /* header */
 .header{
     background-color: rgb(19, 19, 61);
@@ -38,12 +39,9 @@
     padding: 0 0 0 40px;
  }
 
- .menu{
-      display: flex;
-      align-items: center;
-      gap: 30px;
-
- }
+ #menu {
+  display: none;
+}
 
  .nav > a{
   display: flex;
@@ -84,7 +82,6 @@
   color: white;
 }
 
-
  .promocao{
    display: flex;
    justify-content: center;
@@ -109,59 +106,6 @@
     align-items: center;
  }
 
- .pagina-inicial-left{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  
-  width: 100%;
-  
- }
-
- .pagina-inicial-left > p{
-   font-weight: 200;
-   font-size: 18px;
- }
-
- .button-agendamento{
-    background-color: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(10px); 
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5px;
-    gap: 5px;
-    width: 40%;
-    transition: transform 0.2s ease;
-}
-
-.button-agendamento:hover{
-  transform: scale(1.15);
-}
-
- .titulo-principal > h1{
-    display: flex;
-    align-self: center;
-    justify-content: center;
- }
-
- .button-agendamento > img{
-  width: 15%;
- }
-
- .pagina-inicial-left > img{
-  width: 40%;
- }
-
- .pagina-inicial-left> a{
-  text-decoration: none;
-  color: white;
- }
-
  .pagina-inicial-right{
   display: flex;
   flex-direction: row;
@@ -176,6 +120,48 @@
   height: 100%;
  }
 
+ .promocao{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #012640;
+   padding: 110px 0px 0px 0px;
+ }
+
+ .promocao > img{
+  max-width: 100%;
+ }
+
+.sobre-nos{
+  width: 80%;
+  margin: 50px 0px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.sobre-nos-texto{
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  padding-left: 80px;
+}
+
+.sobre-nos-texto > h1{
+  font-size: 35px;
+}
+
+.sobre-nos-texto > p{
+  font-size: 20px;
+  width: 100%;
+  text-align: justify;
+  color: rgb(177, 174, 174);
+}
+
+
  /* SERVIÇOS */
  .servicos{
   display: flex;
@@ -187,7 +173,7 @@
  }
 
  .servicos h1{
-  font-size: 50px;
+  font-size: 35px;
  }
 
  .cards{
@@ -227,35 +213,8 @@
     transition: transform 0.5s ease;
 }
 
-.sobreposicao {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); 
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    opacity: 0; 
-    transition: opacity 0.5s ease; 
-}
 
-.button-saiba-mais > a{
-  text-decoration: none;
-  color: white;
-}
 
-.card:hover .sobreposicao {
-    opacity: 1; 
-}
-
-.card:hover .imagem {
-    transform: scale(1.1); 
-}
 
 .button-saiba-mais{
     background-color: rgba(255, 255, 255, 0.3);
@@ -396,6 +355,85 @@
   font-size: 20px;
 }
 
+.diferenciais{
+  width: 100%;
+  margin: 50px 0px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.diferenciais-h1{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+
+}
+
+.diferenciais-h1 > h1{
+  font-size: 35px;
+}
+
+.conteiner-diferenciais{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  width: 80%;
+}
+
+.diferencial-fora > div > p{
+  font-size: 22px;
+  width: 90%;
+  text-align: justify;
+  align-self: center;
+}
+
+.diferencial-fora{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.diferencial-fora > div{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 13px;
+}
+
+.diferencial-dentro{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 27%;
+}
+
+.diferencial-dentro > div{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 13px;
+}
+
+.diferencial-dentro > div > p{
+  font-size: 22px;
+  width: 90%;
+  text-align: justify;
+  align-self: center;
+}
+
+.img-diferencial{
+  width: 20%;
+  align-self: center;
+  border-radius: 5%;
+  transition: transform 0.2s ease;
+}
+
 .agendamento{
   display: flex;
    justify-content: center;
@@ -487,6 +525,67 @@ input, select, textarea {
   transform: scale(1.1);
 }
 
+.depoimentos{
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 50px 0px;
+}
+
+.title-dep{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-dep > h1{
+font-size: 35px;
+}
+
+.title-dep > p{
+font-size: 20px;
+}
+
+.lista-dep{
+  display: flex;
+  flex-flow: row nowrap;
+  color: black;
+  justify-content: space-evenly;
+  margin-top: 35px;
+}
+
+.box-dep{
+  background-color: white;
+  width: 20%;
+  padding: 25px 15px;
+  border-radius: 5%;
+  transition: transform 0.2s ease;
+}
+
+.box-dep:hover{
+  transform: scale(1.05);
+}
+
+.top-dep{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  font-size: 18px;
+}
+
+.top-dep > img{
+  width: 40%;
+  height: 50%;
+  border-radius: 50%;
+}
+
+.data-dep{
+  color: gray;
+  font-size: 11px;
+}
+
+
+
  /* footer */
  .footer{
    margin: 0px 0px 0px 0px; 
@@ -571,207 +670,6 @@ input, select, textarea {
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
-}
-
-
-.promocao{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   background-color: #012640;
-   padding: 110px 0px 0px 0px;
- }
-
- .promocao > img{
-  max-width: 100%;
- }
-
-.sobre-nos{
-  width: 100%;
-  margin: 50px 0px;
-  
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-end;
-}
-
-.sobre-nos-texto{
-  width: 60%;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: flex-start;
-  text-align: left;
-  padding-left: 80px;
-}
-
-.sobre-nos-texto > h1{
-  font-size: 48px;
-}
-
-.sobre-nos-texto > p{
-  font-size: 30px;
-  width: 80%;
-  text-align: justify;
-}
-
-.sobre-nos-containerimg{
-  width: 40%;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 25px;
-}
-
-.sobre-nos-img{
-  width: 50%;
-  align-self: center;
-  border-radius: 15%;
-  transition: transform 0.2s ease;
-}
-
-.sobre-nos-img:hover{
-  transform: scale(1.05);
-}
-
-.diferenciais{
-  display: flex;
-  flex-flow: column nowrap;
-  margin: 50px 0px;
-}
-
-.diferenciais-h1{
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  padding-left: 80px;
-}
-
-.diferenciais-h1 > h1{
-  font-size: 48px;
-}
-
-.conteiner-diferenciais{
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-}
-
-.diferencial-fora > div > p{
-  font-size: 22px;
-  width: 90%;
-  text-align: justify;
-  align-self: center;
-}
-
-.diferencial-fora{
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-between;
-  align-items: center;
-  width: 25%;
-}
-
-.diferencial-fora > div{
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  text-align: center;
-  font-size: 13px;
-}
-
-.diferencial-dentro{
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-between;
-  align-items: center;
-  width: 27%;
-}
-
-.diferencial-dentro > div{
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  text-align: center;
-  font-size: 13px;
-}
-
-.diferencial-dentro > div > p{
-  font-size: 22px;
-  width: 90%;
-  text-align: justify;
-  align-self: center;
-}
-
-.img-diferencial{
-  width: 75%;
-  align-self: center;
-  border-radius: 5%;
-  transition: transform 0.2s ease;
-}
-
-.img-diferencial:hover{
-  transform: scale(1.05);
-}
-
-.depoimentos{
-  display: flex;
-  flex-flow: column nowrap;
-  margin: 50px 0px;
-}
-
-.title-dep{
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.title-dep > h1{
-font-size: 48px;
-}
-
-.title-dep > p{
-font-size: 30px;
-}
-
-.lista-dep{
-  display: flex;
-  flex-flow: row nowrap;
-  color: black;
-  justify-content: space-evenly;
-  margin-top: 35px;
-}
-
-.box-dep{
-  background-color: white;
-  width: 20%;
-  padding: 25px 15px;
-  border-radius: 5%;
-  transition: transform 0.2s ease;
-}
-
-.box-dep:hover{
-  transform: scale(1.05);
-}
-
-.top-dep{
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-  font-size: 18px;
-}
-
-.top-dep > img{
-  width: 40%;
-  height: 50%;
-  border-radius: 50%;
-}
-
-.data-dep{
-  color: gray;
-  font-size: 11px;
 }
 
 
