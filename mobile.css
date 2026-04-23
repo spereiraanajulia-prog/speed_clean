@@ -349,12 +349,17 @@
       font-size: 35px;
     }
 
-    .conteiner-diferenciais{
-      display: flex;
-      flex-flow: column;
-      justify-content: center;
-      width: 80%;
-    }
+.conteiner-diferenciais{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.diferencial-fora > div > h1{
+  font-size: 20px;
+}
 
     .diferencial-fora > div > p{
       font-size: 22px;
