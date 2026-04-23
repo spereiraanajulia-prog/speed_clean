@@ -1,3 +1,4 @@
+// Carrossel desktop promoçoes
 var radio = document.querySelector('.manual-btn')
 let cont = 1
 
@@ -27,3 +28,13 @@ slider.oninput = () => {
   dragLine.style.lefttop  = val + "%";
 };
 
+
+// Menu hamburguer
+function clickMenu() {
+    let itens = document.getElementById('itens');
+    if (itens.style.display === 'flex') {
+        itens.style.display = 'none';
+    } else {
+        itens.style.display = 'flex';
+    }
+}
