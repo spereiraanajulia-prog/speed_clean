@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=League+Spartan:wght@100..900&family=Michroma&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
     <script type="text/javascript">
               window.onload = function(){
               (function(d, script) {
@@ -245,23 +247,27 @@
         </section>
         <section class="footer" id="footer">
             <div class="top-footer">
-                <div class="text-footer">
+                <div class="text-footer loc-footer">
                     <h1>Encontre-nos</h1>
                     <p>R. Onze de Junho, 1318 - Operário, Novo Hamburgo - RS</p>
-                    <img src="images/mapa.jpg" alt="">
+                    <div class="mapBox"><iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1308.220180886488!2d-46.79196967617632!3d-21.965076821079567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sunifae!5e0!3m2!1spt-BR!2sbr!4v1776977293264!5m2!1spt-BR!2sbr" width="350" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
                 </div>
         
                     <img src="images/logo.png" alt="logo-footer"  class="logo-footer">
         
-                <div class="text-footer">
-                    <h1>Siga-nos</h1>
-                    <button class="rede-social"><a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png" alt="instagram" ></a></button>
-                    <button class="rede-social"><a href="https://www.tiktok.com/pt-BR/" target="_blank"><img src="images/tik-tok.png" alt="tiktok"></a></button>
-                    <button class="rede-social"><a href="https://x.com/" target="_blank"><img src="images/twitter.png" alt="twitter"></button></a>
-                    <button class="rede-social"><a href="https://www.facebook.com/?locale=pt_BR" target="_blank"><img src="images/facebook.png" alt="facebook"></a></button>
-                <h1>Contatos</h1>
-                <p>(51) 99677-6564</p>
-                <p>Segunda - Sábado · 08:00 - 18:00</p>
+                <div class="text-footer contact-footer">
+                    <div>
+                        <h1>Siga-nos</h1>
+                        <button class="rede-social"><a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png" alt="instagram" ></a></button>
+                        <button class="rede-social"><a href="https://www.tiktok.com/pt-BR/" target="_blank"><img src="images/tik-tok.png" alt="tiktok"></a></button>
+                        <button class="rede-social"><a href="https://x.com/" target="_blank"><img src="images/twitter.png" alt="twitter"></button></a>
+                        <button class="rede-social"><a href="https://www.facebook.com/?locale=pt_BR" target="_blank"><img src="images/facebook.png" alt="facebook"></a></button>
+                    </div>
+                <div>
+                    <h1>Contatos</h1>
+                    <p>(51) 99677-6564</p>
+                    <p>Segunda - Sábado · 08:00 - 18:00</p>
+                </div>
                 </div>
 
                 
@@ -314,8 +320,10 @@
 
         <section class="servicos" id="servicos">
             <h1>Serviços</h1>
+            
             <div class="cards">
                     <div class="card">
+                        <h3>Lavagem Técnica Profissional</h3>
                         <img src="images/image1-card.jpg" alt="Card 1" class="imagem">
                     </div>
                     <!-- <div class="card">
@@ -377,8 +385,102 @@
                 <h1>Depoimentos</h1>
                 <p>Mais que clientes, parceiros de brilho: experiências reais de quem escolheu a excelência.</p>
             </div>
-            <div class="lista-dep">
-                <div class="box-dep">
+
+            <!-- <div class="container swiper">
+                <div class="card-wrapper">
+                    <ul class="card-list swiper-wrapper">
+                        <li class="card-item swiper-slide">
+                            <div class="box-dep">
+                                <div class="top-dep">
+                                        <img src="images/ronaldo.png" alt="cliente1">
+                                    <div>
+                                        <div>
+                                            <p>Ricardo Santos</p>
+                                        </div>
+                                        <div class="data-dep">
+                                            <p>22/01/2026</p>
+                                        </div>
+                                        <div class="stars">
+                                            <p>&#11088&#11088&#11088&#11088&#11088</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="low-dep">
+                                <p> "Fiquei impressionado com o polimento dos faróis e a aplicação do selante. O brilho final é surreal e o interior ficou impecável. Recomendo de olhos fechados!"</p>
+                                </div>
+                            </div>                         
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <div class="box-dep">
+                                <div class="top-dep">
+                                        <img src="images/juliana.png" alt="cliente2">
+                                    <div>
+                                        <div>
+                                            <p>Juliana Costa</p>
+                                        </div>
+                                        <div class="data-dep">
+                                            <p>29/02/2026</p>
+                                        </div>
+                                        <div class="stars">
+                                            <p>&#11088&#11088&#11088&#11088&#11088</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="low-dep">
+                                <p> "Superou todas as minhas expectativas. O motor foi detalhado com um cuidado incrível e os pequenos riscos sumiram. O atendimento é nota dez!"</p>
+                                </div>
+                            </div>                         
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <div class="box-dep">
+                                <div class="top-dep">
+                                        <img src="images/marcos.png" alt="cliente1">
+                                    <div>
+                                        <div>
+                                            <p>Marcos Oliveira</p>
+                                        </div>
+                                        <div class="data-dep">
+                                            <p>08/03/2026</p>
+                                        </div>
+                                        <div class="stars">
+                                            <p>&#11088&#11088&#11088&#11088&#11088</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="low-dep">
+                                <p> "Aproveitei a promoção de Quarta-feira e o resultado foi incrível. A agilidade do serviço não comprometeu a qualidade. Muito satisfeito com a escolha."</p>
+                                </div>
+                            </div>                         
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <div class="box-dep">
+                                <div class="top-dep">
+                                        <img src="images/amanda.png" alt="cliente1">
+                                    <div>
+                                        <div>
+                                            <p>Amanda Ferreira</p>
+                                        </div>
+                                        <div class="data-dep">
+                                            <p>13/09/2025</p>
+                                        </div>
+                                        <div class="stars">
+                                            <p>&#11088&#11088&#11088&#11088&#11088</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="low-dep">
+                                <p> "O serviço completo me conquistou. Desde a aspiração profunda até a proteção da pintura, o carro parece ter saído da concessionária. Parabéns à equipe!"</p>
+                                </div>
+                            </div>                         
+                        </li>
+                    </ul>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div> -->
+
+                <div class="lista-dep">
+                 <div class="box-dep">
                     <div class="top-dep">
                          <img src="images/ronaldo.png" alt="cliente1">
                         <div>
@@ -454,25 +556,32 @@
                         <p> O serviço completo me conquistou. Desde a aspiração profunda até a proteção da pintura, o carro parece ter saído da concessionária. Parabéns à equipe!"</p>
                     </div> -->
                 </div>
-            </div>
+            </div> 
         </section>
         <section class="footer" id="footer">
             <div class="top-footer">
+                
                 <div class="text-footer">
                     <h1>Contatos</h1>
-                    <p>R. Onze de Junho, 1318 - Operário, Novo Hamburgo - RS</p>
                     <p>(51) 99677-6564</p>
                     <p>Segunda - Sábado · 08:00 - 18:00</p>
-                </div>
-        
-                    <img src="images/logo.png" alt="logo-footer"  class="logo-footer">
-        
-                <div class="text-footer">
-                    <h1>Siga-nos</h1>
                     <button class="rede-social"><a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png" alt="instagram" ></a></button>
                     <button class="rede-social"><a href="https://www.tiktok.com/pt-BR/" target="_blank"><img src="images/tik-tok.png" alt="tiktok"></a></button>
                     <button class="rede-social"><a href="https://x.com/" target="_blank"><img src="images/twitter.png" alt="twitter"></button></a>
                     <button class="rede-social"><a href="https://www.facebook.com/?locale=pt_BR" target="_blank"><img src="images/facebook.png" alt="facebook"></a></button>
+                </div>
+        
+                    <!-- <img src="images/logo.png" alt="logo-footer"  class="logo-footer"> -->
+        
+                <!-- <div class="text-footer">
+                    <h1>Siga-nos</h1>
+                    
+                </div> -->
+
+                <div class="text-footer">
+                    <h1>Encontre-nos</h1>
+                    <p>R. Onze de Junho, 1318 - Operário, Novo Hamburgo - RS</p>
+                    <div class="mapBox"><iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1308.220180886488!2d-46.79196967617632!3d-21.965076821079567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sunifae!5e0!3m2!1spt-BR!2sbr!4v1776977293264!5m2!1spt-BR!2sbr" width="350" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
                 </div>
             </div>
             <div class="low-footer">
@@ -483,5 +592,6 @@
         <script src="script.js"></script>
     </section>
 <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 </body>
 </html>

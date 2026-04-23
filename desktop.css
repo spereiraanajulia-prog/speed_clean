@@ -832,6 +832,26 @@ font-size: 30px;
   font-size: 11px;
 }
 
+.mapBox{
+  position: relative;
+  width: 350px;
+  height: 350px;
+  background: #fff;
+}
+
+.loc-footer{
+  align-items: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.contact-footer{
+  gap: 100px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+}
 
 h1{
   font-family: "Michroma", sans-serif;
