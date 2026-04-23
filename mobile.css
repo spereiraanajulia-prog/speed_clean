@@ -124,23 +124,24 @@
       max-width: 100%;
     }
 
-    .sobre-nos{
-      width: 80%;
-      margin: 50px 0px;
-      display: flex;
-      flex-flow: row nowrap;
-      justify-content: center;
-    }
+.sobre-nos{
+  width: 100%;
+  margin: 50px 0px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
 
-    .sobre-nos-texto{
-      width: 100%;
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: center;
-      align-items: flex-start;
-      text-align: left;
-      padding-left: 80px;
-    }
+.sobre-nos-texto{
+  width: 80%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+
+}
 
     .sobre-nos-texto > h1{
       font-size: 35px;
@@ -168,22 +169,22 @@
       font-size: 35px;
     }
 
-    .cards{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
+ .cards{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ }
 
-    .card {
-        position: relative;
-        width: 50%;
-        height: 50%;
-        overflow: hidden;
-        cursor: pointer;
-        border-radius: 30px;
-        margin: 20px;
-    }
+ .card {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 30px;
+    margin: 20px;
+}
 
     .imagem {
         width: 100%;
@@ -361,20 +362,20 @@
   font-size: 20px;
 }
 
-    .diferencial-fora > div > p{
-      font-size: 22px;
-      width: 90%;
-      text-align: justify;
-      align-self: center;
-    }
+.diferencial-fora > div > p{
+  font-size: 22px;
+  width: 90%;
+  text-align: justify;
+  align-self: center;
+}
 
-    .diferencial-fora{
-      display: flex;
-      flex-flow: column;
-      justify-content: center;
-      align-items: center;
-      width: 80%;
-    }
+.diferencial-fora{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
 
     .diferencial-fora > div{
       display: flex;
@@ -384,35 +385,35 @@
       font-size: 13px;
     }
 
-    .diferencial-dentro{
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: center;
-      align-items: center;
-      width: 27%;
-    }
+.diferencial-dentro{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 27%;
+}
 
-    .diferencial-dentro > div{
-      display: flex;
-      flex-flow: column;
-      justify-content: center;
-      text-align: center;
-      font-size: 13px;
-    }
+.diferencial-dentro > div{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 13px;
+}
 
-    .diferencial-dentro > div > p{
-      font-size: 22px;
-      width: 90%;
-      text-align: justify;
-      align-self: center;
-    }
+.diferencial-dentro > div > p{
+  font-size: 22px;
+  width: 90%;
+  text-align: justify;
+  align-self: center;
+}
 
-    .img-diferencial{
-      width: 20%;
-      align-self: center;
-      border-radius: 5%;
-      transition: transform 0.2s ease;
-    }
+.img-diferencial{
+  width: 20%;
+  align-self: center;
+  border-radius: 5%;
+  transition: transform 0.2s ease;
+}
 
     .agendamento{
       display: flex;
@@ -511,12 +512,12 @@
       margin: 50px 0px;
     }
 
-    .title-dep{
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: center;
-      align-items: center;
-    }
+.title-dep{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
 
     .title-dep > h1{
     font-size: 35px;
@@ -534,17 +535,17 @@
       margin-top: 35px;
     }
 
-    .box-dep{
-      background-color: white;
-      width: 20%;
-      padding: 25px 15px;
-      border-radius: 5%;
-      transition: transform 0.2s ease;
-    }
+.box-dep{
+  background-color: white;
+  width: 20%;
+  padding: 25px 15px;
+  border-radius: 5%;
+  transition: transform 0.2s ease;
+}
 
-    .box-dep:hover{
-      transform: scale(1.05);
-    }
+.box-dep:hover{
+  transform: scale(1.05);
+}
 
     .top-dep{
       display: flex;
@@ -559,10 +560,10 @@
       border-radius: 50%;
     }
 
-    .data-dep{
-      color: gray;
-      font-size: 11px;
-    }
+.data-dep{
+  color: gray;
+  font-size: 11px;
+}
 
 
 
@@ -579,59 +580,59 @@
         align-items: center;
     }
 
-    .top-footer{
-      width: 100%;
-      display: flex;
-      flex-flow: row nowrap;
-      justify-content: space-around;
-      align-items: center;
-      text-align: center;
-    }
+ .top-footer{
+   width: 100%;
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: space-around;
+   align-items: center;
+   text-align: center;
+ }
 
     .logo-footer{
       width: 30%;
     }
 
-    .text-footer{
-      width: 30%;
-    }
+ .text-footer{
+   width: 30%;
+ }
 
-    .text-footer > h1{
-      font-family: "Michroma", sans-serif;
-      font-weight: 100;
-      font-style: normal;
-    }
-    
-    .text-footer > p{
-      font-family: "League Spartan", sans-serif;
-      font-optical-sizing: auto;
-      font-weight: 200;
-      font-style: normal;
-    }
-    
-    .rede-social{
-      background-color: transparent;
-      border: none;
-    }
+ .text-footer > h1{
+   font-family: "Michroma", sans-serif;
+   font-weight: 100;
+   font-style: normal;
+ }
+ 
+ .text-footer > p{
+   font-family: "League Spartan", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 200;
+   font-style: normal;
+ }
+ 
+.rede-social{
+   background-color: transparent;
+   border: none;
+}
 
-    .low-footer{
-      width: 100%;
-      align-items: center;
-      font-family: "League Spartan", sans-serif;
-      font-optical-sizing: auto;
-      font-weight: 200;
-      font-style: normal;
-    }
+.low-footer{
+   width: 100%;
+   align-items: center;
+   font-family: "League Spartan", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 200;
+   font-style: normal;
+}
 
-    .low-footer > p{
-      display: flex;
-      flex-flow: row nowrap;
-      justify-content: center;
-    }
+.low-footer > p{
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: center;
+}
 
-    .hr{
-      max-width: 95%;
-    }
+.hr{
+   max-width: 95%;
+}
 
     .michroma-regular {
       font-family: "Michroma", sans-serif;
