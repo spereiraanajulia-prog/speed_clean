@@ -378,7 +378,12 @@
   display: flex;
   flex-flow: column;
   justify-content: center;
-  width: 80%;
+  align-items: center;
+  width: 100%;
+}
+
+.diferencial-fora > div > h1{
+  font-size: 20px;
 }
 
 .diferencial-fora > div > p{
