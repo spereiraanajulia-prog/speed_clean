@@ -179,28 +179,53 @@
       font-size: 35px;
     }
 
-    .cards{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
+ .cards{
+  display: flex;
+  margin: 3em auto;
+  gap: .5em;
+  width: 100%;
+  overflow-x: auto;
+  scroll-marker-group: after;
+ }
 
-    .card {
-        position: relative;
-        width: 50%;
-        height: 50%;
-        overflow: hidden;
-        cursor: pointer;
-        border-radius: 30px;
-        margin: 20px;
-    }
+ .cards::scroll-marker-group{
+  display: flex;
+  justify-content: center;
+  gap: .5em;
+ }
+
+ .card::scroll-marker{
+  content: '';
+  height: 1em;
+  width: 1em;
+  background-color: #757575;
+  border-radius: 50%;
+ }
+
+ .card::scroll-marker:target-current{
+  background-color: #D4AF37;
+ }
+
+ .cards::-webkit-scrollbar{
+  display: none;
+ }
+
+ .card {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 30px;
+    margin: 20px;
+}
 
     .imagem {
         width: 100%;
         height: 100%;
         object-fit: cover;
         transition: transform 0.5s ease;
+        border-radius: 30px;
     }
 
     .button-saiba-mais{
@@ -402,21 +427,21 @@
       font-size: 13px;
       }
 
-  .diferencial-dentro{
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    width: 27%;
-  }
+.diferencial-dentro{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 27%;
+}
 
-  .diferencial-dentro > div{
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    text-align: center;
-    font-size: 13px;
-  }
+.diferencial-dentro > div{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 13px;
+}
 
   .diferencial-dentro > div > p{
     font-size: 22px;
@@ -425,12 +450,12 @@
     align-self: center;
   }
 
-  .img-diferencial{
-    width: 20%;
-    align-self: center;
-    border-radius: 5%;
-    transition: transform 0.2s ease;
-  }
+.img-diferencial{
+  width: 20%;
+  align-self: center;
+  border-radius: 5%;
+  transition: transform 0.2s ease;
+}
 
     .agendamento{
       display: flex;
@@ -529,12 +554,12 @@
       margin: 50px 0px;
     }
 
-    .title-dep{
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: center;
-      align-items: center;
-    }
+.title-dep{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
 
     .title-dep > h1{
     font-size: 35px;
@@ -542,45 +567,83 @@
 
     .title-dep > p{
     font-size: 20px;
+    text-align: center;
     }
 
     .lista-dep{
       display: flex;
-      flex-flow: row nowrap;
-      color: black;
-      justify-content: space-evenly;
       margin-top: 35px;
+      gap: 1em;
+      margin: 3em auto;
+      width: 90%;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      scroll-marker-group: after;
     }
 
-    .box-dep{
-      background-color: white;
-      width: 20%;
-      padding: 25px 15px;
-      border-radius: 5%;
-      transition: transform 0.2s ease;
+    .lista-dep::scroll-marker-group{
+      display: flex;
+      justify-content: center;
+      gap: .5em;
     }
 
-    .box-dep:hover{
-      transform: scale(1.05);
+    .box-dep::scroll-marker{
+      content: '';
+      height: 1em;
+      width: 1em;
+      border-radius: 50%;
+      background-color: #757575;
+      margin-top: -35px;
     }
+
+        .box-dep::scroll-marker:target-current{
+          background-color: #D4AF37;
+        }
+
+    .lista-dep::-webkit-scrollbar{
+      display: none;
+    }
+
+
+
+
+.box-dep{
+  background-color: white;
+  width: 20%;
+  padding: 25px 15px;
+  border-radius: 5%;
+  transition: transform 0.2s ease;
+}
+
+.box-dep:hover{
+  transform: scale(1.05);
+}
 
     .top-dep{
       display: flex;
       flex-flow: row nowrap;
       justify-content: space-around;
       font-size: 18px;
+      padding-top: 10px;
     }
 
     .top-dep > img{
-      width: 40%;
-      height: 50%;
+      width: 30%;
+      height: 40%;
       border-radius: 50%;
+      align-self: center;
     }
 
-    .data-dep{
-      color: gray;
-      font-size: 11px;
+        .top-dep > div > div > p{
+          font-size: 14px;
     }
+
+.data-dep{
+  color: gray;
+  font-size: 11px;
+}
+
+
 
     /* footer */
     .footer{
@@ -595,22 +658,22 @@
         align-items: center;
     }
 
-    .top-footer{
-      width: 100%;
-      display: flex;
-      flex-flow: row nowrap;
-      justify-content: space-around;
-      align-items: center;
-      text-align: center;
-    }
+ .top-footer{
+   width: 100%;
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: space-around;
+   align-items: center;
+   text-align: center;
+ }
 
     .logo-footer{
       width: 30%;
       }
 
-    .text-footer{
-      width: 30%;
-    }
+ .text-footer{
+   width: 30%;
+ }
 
     .text-footer > h1{
       font-family: "Michroma", sans-serif;

@@ -832,6 +832,10 @@
     font-size: 11px;
   }
 
+  .stars{
+    font-size: 10px;
+  }
+
 .mapBox{
   position: relative;
   width: 350px;

@@ -17,17 +17,6 @@ function proximaImg(){
     document.getElementById('radio' + cont).checked = true
 }
 
-const slider   = document.querySelector(".slider-comp input");
-const img2     = document.querySelector(".images .img-2");
-const dragLine = document.querySelector(".slider-comp .drag-line");
-
-slider.oninput = () => {
-  let val = slider.value;
-
-  img2.style.widthheight   = val + "%";
-  dragLine.style.lefttop  = val + "%";
-};
-
 
 // Menu hamburguer
 function clickMenu() {
@@ -38,3 +27,18 @@ function clickMenu() {
         itens.style.display = 'flex';
     }
 }
+
+// carrossel depoimentos mobile
+var swiper = new Swiper(".swiper", {
+    loop: true, 
+    
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+      },
+    });
+  
