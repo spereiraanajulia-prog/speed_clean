@@ -1,4 +1,4 @@
-// Carrossel desktop promoçoes
+// Carrossel promoçoes
 var radio = document.querySelector('.manual-btn')
 let cont = 1
 

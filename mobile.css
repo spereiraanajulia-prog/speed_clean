@@ -1,26 +1,26 @@
 @media screen and (min-width: 400px) and (max-width: 768px){
 
-    .desktop{
-          display: none;
-      }
+  .desktop{
+    display: none;
+    }
 
-    body{
-      width: 100%; 
-      margin: 0px;
-      background-color: #012640;
-      color: white; 
+  body{
+    width: 100%; 
+    margin: 0px;
+    background-color: #012640;
+    color: white; 
     }
     
-    .header{
-         background-color: #003E74;
-        position: fixed;
-        width: 100%;
-        align-items: center;
-        margin-top: 0px;
-        height: 80px;
-        display: flex;
-        flex-direction: row nowrap;
-        justify-content: center;
+  .header{
+    background-color: #003E74;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    margin-top: 0px;
+    height: 80px;
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: center;
     }
 
     #burguer{
@@ -32,50 +32,49 @@
     }
 
     .nav {
-        position: relative;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 100%;
-        gap: 200px;
+      position: relative;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      gap: 200px;
     }
 
     .menu_hamburguer {
-        margin: 0px;
-        position: absolute;
-        top: 100%;
-        width: 100%;
-      
-        z-index: 1000;
-        display: none; 
-        flex-flow: column;
-        align-items: center;
-        align-self: center;
-        justify-content: center;
-        background: rgba(255, 255, 255, 0.699);
-        backdrop-filter: blur(20px); 
-        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      margin: 0px;
+      position: absolute;
+      top: 100%;
+      width: 100%;
+      z-index: 1000;
+      display: none; 
+      flex-flow: column;
+      align-items: center;
+      align-self: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.699);
+      backdrop-filter: blur(20px); 
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     }
 
     .menu_hamburguer a {
-        text-decoration: none;
-        color: #333; 
-        padding: 15px;
-        width: 100%;
-        text-align: center;
-        font-weight: 500;
+      text-decoration: none;
+      color: #333; 
+      padding: 15px;
+      width: 100%;
+      text-align: center;
+      font-weight: 500;
     }
 
     .menu_hamburguer .contato {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2px;
     }
 
     .menu_hamburguer .contato img {
-        width: 10%;
+      width: 10%;
     }
 
     .logo{
@@ -83,27 +82,54 @@
       height: 50px;
     }
 
-    .promocao{
+    .carrossel{
+      margin: 50px 0px;;
+      width: 90%;
       display: flex;
+      overflow-x: auto ;
+    }
+
+    .carrossel::-webkit-scrollbar{
+      display: none;
+    }
+
+    .grupo{
+      display: flex;
+      align-items: center;
       justify-content: center;
-      align-items: center;
+      gap: 1em;
+      animation: spin 5s infinite linear;  
+      padding-right: 1em;  
     }
 
-
-    .pagina-inicial{
-        width: 100%;
-        display: flex;
-        flex-direction: column ;
-        justify-content: space-between;
-        align-items: center;
+    .card-carrossel{
+      flex: 0 0 5em;
+      height: 5em;
+      padding: 1em;
+      align-content: center;
     }
 
-    .pagina-inicial-right{
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-      align-items: center;
-      width: 100%;
+    @keyframes spin{
+      from {translate: 0;}
+      to{translate: -100%;}
+    }
+
+  .pagina-inicial{
+    margin: 50px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column ;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    }
+
+  .pagina-inicial-right{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
 
     }
 
@@ -112,36 +138,22 @@
       height: 100%;
     }
 
-    .promocao{
+    .sobre-nos{
+      width: 100%;
+      margin: 50px 0px;
       display: flex;
+      flex-flow: row nowrap;
       justify-content: center;
       align-items: center;
-      background-color: #012640;
-      padding: 110px 0px 0px 0px;
     }
 
-    .promocao > img{
-      max-width: 100%;
+    .sobre-nos-texto{
+      width: 80%;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
     }
-
-.sobre-nos{
-  width: 100%;
-  margin: 50px 0px;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.sobre-nos-texto{
-  width: 80%;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-
-
-}
 
     .sobre-nos-texto > h1{
       font-size: 35px;
@@ -154,8 +166,6 @@
       color: rgb(255, 255, 255);
     }
 
-
-    /* SERVIÇOS */
     .servicos{
       display: flex;
       flex-flow: column;
@@ -169,22 +179,22 @@
       font-size: 35px;
     }
 
- .cards{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
- }
+    .cards{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
 
- .card {
-    position: relative;
-    width: 50%;
-    height: 50%;
-    overflow: hidden;
-    cursor: pointer;
-    border-radius: 30px;
-    margin: 20px;
-}
+    .card {
+        position: relative;
+        width: 50%;
+        height: 50%;
+        overflow: hidden;
+        cursor: pointer;
+        border-radius: 30px;
+        margin: 20px;
+    }
 
     .imagem {
         width: 100%;
@@ -210,7 +220,7 @@
       width: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
       padding: 110px 0px 0px 0px;
       text-align: center;
@@ -218,11 +228,11 @@
 
     .servicos-info{
       display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
     }
 
-    .servicos-left{
+    .servicos-abaixo{
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -231,23 +241,17 @@
       border-radius: 30px; 
       box-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
       background-color: transparent;
-      width: 30%;
-    }
-
-    .imagem-card1{
-      width: 100%;
-      border-radius: 30px;
-
+      width: 80%;
     }
 
     .preco{
       display: flex;
       flex-flow: row;
-      align-items: flex-end;
-      font-size: 30px;
+      align-items: center;
+      font-size: 20px;
     }
 
-    .servicos-rigth{
+    .servicos-acima{
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -255,11 +259,12 @@
       padding: 0px 0px 0px 50px;
     }
 
-    .servicos-rigth > h1{
-      margin: 40px;
+    .servicos-acima > h1{
+      margin: 30px;
     }
 
     .informacoes{
+      width: 80%;
       display: flex;
       flex-direction: column;
       text-align: start;
@@ -276,14 +281,25 @@
     .fotos-trabalhos{
       width: 100%;
       display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0px 0px 50px 0px;
     }
 
     .image-trabalho{
-      width: 50%;
+      width: 60%;
       height: 100%;
       border-radius: 30px;
+    }
+
+    .cima{
+      display: flex;
+      flex-direction: row;
+      padding: 0px 0px 50px 0px;
+    }
+    .baixo{
+      display: flex;
+      flex-direction: row;
     }
 
     .agendamento > img{
@@ -310,11 +326,12 @@
       width: 100px;
     }
 
+    
     .botao-voltar{
       display: flex;
       align-items: center;
       justify-content: center;
-      background: linear-gradient(to right, #D4AF37, #A67C00, #b38728);
+      background: linear-gradient(to right, #8a701a, #86743d, #8a701a);
       border-radius: 30px;
       height: 40%;
       width: 100px;
@@ -350,70 +367,70 @@
       font-size: 35px;
     }
 
-.conteiner-diferenciais{
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
+  .conteiner-diferenciais{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
 
-.diferencial-fora > div > h1{
-  font-size: 20px;
-}
+  .diferencial-fora > div > h1{
+    font-size: 20px;
+  }
 
-.diferencial-fora > div > p{
-  font-size: 22px;
-  width: 90%;
-  text-align: justify;
-  align-self: center;
-}
+  .diferencial-fora > div > p{
+    font-size: 22px;
+    width: 90%;
+    text-align: justify;
+    align-self: center;
+  }
 
-.diferencial-fora{
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
-}
+  .diferencial-fora{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+  }
 
-    .diferencial-fora > div{
+  .diferencial-fora > div{
       display: flex;
       flex-flow: column;
       justify-content: center;
       text-align: center;
       font-size: 13px;
-    }
+      }
 
-.diferencial-dentro{
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  width: 27%;
-}
+  .diferencial-dentro{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 27%;
+  }
 
-.diferencial-dentro > div{
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  text-align: center;
-  font-size: 13px;
-}
+  .diferencial-dentro > div{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 13px;
+  }
 
-.diferencial-dentro > div > p{
-  font-size: 22px;
-  width: 90%;
-  text-align: justify;
-  align-self: center;
-}
+  .diferencial-dentro > div > p{
+    font-size: 22px;
+    width: 90%;
+    text-align: justify;
+    align-self: center;
+  }
 
-.img-diferencial{
-  width: 20%;
-  align-self: center;
-  border-radius: 5%;
-  transition: transform 0.2s ease;
-}
+  .img-diferencial{
+    width: 20%;
+    align-self: center;
+    border-radius: 5%;
+    transition: transform 0.2s ease;
+  }
 
     .agendamento{
       display: flex;
@@ -512,12 +529,12 @@
       margin: 50px 0px;
     }
 
-.title-dep{
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-}
+    .title-dep{
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+    }
 
     .title-dep > h1{
     font-size: 35px;
@@ -535,17 +552,17 @@
       margin-top: 35px;
     }
 
-.box-dep{
-  background-color: white;
-  width: 20%;
-  padding: 25px 15px;
-  border-radius: 5%;
-  transition: transform 0.2s ease;
-}
+    .box-dep{
+      background-color: white;
+      width: 20%;
+      padding: 25px 15px;
+      border-radius: 5%;
+      transition: transform 0.2s ease;
+    }
 
-.box-dep:hover{
-  transform: scale(1.05);
-}
+    .box-dep:hover{
+      transform: scale(1.05);
+    }
 
     .top-dep{
       display: flex;
@@ -560,12 +577,10 @@
       border-radius: 50%;
     }
 
-.data-dep{
-  color: gray;
-  font-size: 11px;
-}
-
-
+    .data-dep{
+      color: gray;
+      font-size: 11px;
+    }
 
     /* footer */
     .footer{
@@ -580,59 +595,59 @@
         align-items: center;
     }
 
- .top-footer{
-   width: 100%;
-   display: flex;
-   flex-flow: row nowrap;
-   justify-content: space-around;
-   align-items: center;
-   text-align: center;
- }
+    .top-footer{
+      width: 100%;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center;
+    }
 
     .logo-footer{
       width: 30%;
+      }
+
+    .text-footer{
+      width: 30%;
     }
 
- .text-footer{
-   width: 30%;
- }
+    .text-footer > h1{
+      font-family: "Michroma", sans-serif;
+      font-weight: 100;
+      font-style: normal;
+    }
+    
+    .text-footer > p{
+      font-family: "League Spartan", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 200;
+      font-style: normal;
+    }
+    
+    .rede-social{
+      background-color: transparent;
+      border: none;
+    }
 
- .text-footer > h1{
-   font-family: "Michroma", sans-serif;
-   font-weight: 100;
-   font-style: normal;
- }
- 
- .text-footer > p{
-   font-family: "League Spartan", sans-serif;
-   font-optical-sizing: auto;
-   font-weight: 200;
-   font-style: normal;
- }
- 
-.rede-social{
-   background-color: transparent;
-   border: none;
-}
+    .low-footer{
+      width: 100%;
+      align-items: center;
+      font-family: "League Spartan", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 200;
+      font-style: normal;
+    }
 
-.low-footer{
-   width: 100%;
-   align-items: center;
-   font-family: "League Spartan", sans-serif;
-   font-optical-sizing: auto;
-   font-weight: 200;
-   font-style: normal;
-}
+    .low-footer > p{
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+    }
 
-.low-footer > p{
-   display: flex;
-   flex-flow: row nowrap;
-   justify-content: center;
-}
-
-.hr{
-   max-width: 95%;
-}
+    .hr{
+      max-width: 95%;
+    }
 
     .michroma-regular {
       font-family: "Michroma", sans-serif;
