@@ -292,6 +292,10 @@
       text-align: center;
     }
 
+    .servicos-info > h1{
+      margin: 10px;
+    }
+
     .servicos-info{
       display: flex;
       flex-direction: column;
