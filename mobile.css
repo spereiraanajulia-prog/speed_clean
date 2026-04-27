@@ -1,26 +1,26 @@
 @media screen and (min-width: 400px) and (max-width: 768px){
 
-  .desktop{
-    display: none;
-    }
+    .desktop{
+          display: none;
+      }
 
-  body{
-    width: 100%; 
-    margin: 0px;
-    background-color: #012640;
-    color: white; 
+    body{
+      width: 100%; 
+      margin: 0px;
+      background-color: #012640;
+      color: white; 
     }
     
-  .header{
-    background-color: #003E74;
-    position: fixed;
-    width: 100%;
-    align-items: center;
-    margin-top: 0px;
-    height: 80px;
-    display: flex;
-    flex-direction: row nowrap;
-    justify-content: center;
+    .header{
+         background-color: #003E74;
+        position: fixed;
+        width: 100%;
+        align-items: center;
+        margin-top: 0px;
+        height: 80px;
+        display: flex;
+        flex-direction: row nowrap;
+        justify-content: center;
     }
 
     #burguer{
@@ -32,49 +32,50 @@
     }
 
     .nav {
-      position: relative;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      width: 100%;
-      gap: 200px;
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        gap: 200px;
     }
 
     .menu_hamburguer {
-      margin: 0px;
-      position: absolute;
-      top: 100%;
-      width: 100%;
-      z-index: 1000;
-      display: none; 
-      flex-flow: column;
-      align-items: center;
-      align-self: center;
-      justify-content: center;
-      background: rgba(255, 255, 255, 0.699);
-      backdrop-filter: blur(20px); 
-      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        margin: 0px;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+      
+        z-index: 1000;
+        display: none; 
+        flex-flow: column;
+        align-items: center;
+        align-self: center;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.699);
+        backdrop-filter: blur(20px); 
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     }
 
     .menu_hamburguer a {
-      text-decoration: none;
-      color: #333; 
-      padding: 15px;
-      width: 100%;
-      text-align: center;
-      font-weight: 500;
+        text-decoration: none;
+        color: #333; 
+        padding: 15px;
+        width: 100%;
+        text-align: center;
+        font-weight: 500;
     }
 
     .menu_hamburguer .contato {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2px;
     }
 
     .menu_hamburguer .contato img {
-      width: 10%;
+        width: 10%;
     }
 
     .logo{
@@ -82,54 +83,27 @@
       height: 50px;
     }
 
-    .carrossel{
-      margin: 50px 0px;;
-      width: 90%;
+    .promocao{
       display: flex;
-      overflow-x: auto ;
-    }
-
-    .carrossel::-webkit-scrollbar{
-      display: none;
-    }
-
-    .grupo{
-      display: flex;
-      align-items: center;
       justify-content: center;
-      gap: 1em;
-      animation: spin 5s infinite linear;  
-      padding-right: 1em;  
+      align-items: center;
     }
 
-    .card-carrossel{
-      flex: 0 0 5em;
-      height: 5em;
-      padding: 1em;
-      align-content: center;
+
+    .pagina-inicial{
+        width: 100%;
+        display: flex;
+        flex-direction: column ;
+        justify-content: space-between;
+        align-items: center;
     }
 
-    @keyframes spin{
-      from {translate: 0;}
-      to{translate: -100%;}
-    }
-
-  .pagina-inicial{
-    margin: 50px 0px;
-    width: 100%;
-    display: flex;
-    flex-direction: column ;
-    justify-content: space-between;
-    align-items: center;
-
-    }
-
-  .pagina-inicial-right{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    width: 100%;
+    .pagina-inicial-right{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      width: 100%;
 
     }
 
@@ -138,22 +112,36 @@
       height: 100%;
     }
 
-    .sobre-nos{
-      width: 100%;
-      margin: 50px 0px;
+    .promocao{
       display: flex;
-      flex-flow: row nowrap;
       justify-content: center;
       align-items: center;
+      background-color: #012640;
+      padding: 110px 0px 0px 0px;
     }
 
-    .sobre-nos-texto{
-      width: 80%;
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: center;
-      align-items: center;
+    .promocao > img{
+      max-width: 100%;
     }
+
+.sobre-nos{
+  width: 100%;
+  margin: 50px 0px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.sobre-nos-texto{
+  width: 80%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+
+}
 
     .sobre-nos-texto > h1{
       font-size: 35px;
@@ -166,6 +154,8 @@
       color: rgb(255, 255, 255);
     }
 
+
+    /* SERVIÇOS */
     .servicos{
       display: flex;
       flex-flow: column;
@@ -211,14 +201,34 @@
  }
 
  .card {
-    position: relative;
-    width: 50%;
+    text-align: center;
+    width: 60%;
     height: 50%;
     overflow: hidden;
     cursor: pointer;
     border-radius: 30px;
     margin: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    flex: 0 0 22em;
 }
+
+.card > h3{
+  font-size: 20px;
+}
+ /* .card {
+    text-align: center;
+    width: 60%;
+    height: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 30px;
+    margin: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+} */
 
     .imagem {
         width: 100%;
@@ -245,7 +255,7 @@
       width: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
       padding: 110px 0px 0px 0px;
       text-align: center;
@@ -253,11 +263,11 @@
 
     .servicos-info{
       display: flex;
-      flex-direction: column;
-      align-items: center;
+      flex-direction: row;
+      justify-content: space-between;
     }
 
-    .servicos-abaixo{
+    .servicos-left{
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -266,17 +276,23 @@
       border-radius: 30px; 
       box-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
       background-color: transparent;
-      width: 80%;
+      width: 30%;
+    }
+
+    .imagem-card1{
+      width: 100%;
+      border-radius: 30px;
+
     }
 
     .preco{
       display: flex;
       flex-flow: row;
-      align-items: center;
-      font-size: 20px;
+      align-items: flex-end;
+      font-size: 30px;
     }
 
-    .servicos-acima{
+    .servicos-rigth{
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -284,12 +300,11 @@
       padding: 0px 0px 0px 50px;
     }
 
-    .servicos-acima > h1{
-      margin: 30px;
+    .servicos-rigth > h1{
+      margin: 40px;
     }
 
     .informacoes{
-      width: 80%;
       display: flex;
       flex-direction: column;
       text-align: start;
@@ -306,25 +321,14 @@
     .fotos-trabalhos{
       width: 100%;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 0px 0px 50px 0px;
+      flex-direction: row;
+      justify-content: space-evenly;
     }
 
     .image-trabalho{
-      width: 60%;
+      width: 50%;
       height: 100%;
       border-radius: 30px;
-    }
-
-    .cima{
-      display: flex;
-      flex-direction: row;
-      padding: 0px 0px 50px 0px;
-    }
-    .baixo{
-      display: flex;
-      flex-direction: row;
     }
 
     .agendamento > img{
@@ -351,12 +355,11 @@
       width: 100px;
     }
 
-    
     .botao-voltar{
       display: flex;
       align-items: center;
       justify-content: center;
-      background: linear-gradient(to right, #8a701a, #86743d, #8a701a);
+      background: linear-gradient(to right, #D4AF37, #A67C00, #b38728);
       border-radius: 30px;
       height: 40%;
       width: 100px;
@@ -392,47 +395,47 @@
       font-size: 35px;
     }
 
-  .conteiner-diferenciais{
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
+.conteiner-diferenciais{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 
-  .diferencial-fora > div > h1{
-    font-size: 20px;
-  }
+.diferencial-fora > div > h1{
+  font-size: 20px;
+}
 
-  .diferencial-fora > div > p{
-    font-size: 22px;
-    width: 90%;
-    text-align: justify;
-    align-self: center;
-  }
+.diferencial-fora > div > p{
+  font-size: 22px;
+  width: 90%;
+  text-align: justify;
+  align-self: center;
+}
 
-  .diferencial-fora{
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-  }
+.diferencial-fora{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
 
-  .diferencial-fora > div{
+    .diferencial-fora > div{
       display: flex;
       flex-flow: column;
       justify-content: center;
       text-align: center;
       font-size: 13px;
-      }
+    }
 
 .diferencial-dentro{
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  width: 27%;
+  width: 80%;
 }
 
 .diferencial-dentro > div{
@@ -443,15 +446,19 @@
   font-size: 13px;
 }
 
-  .diferencial-dentro > div > p{
-    font-size: 22px;
-    width: 90%;
-    text-align: justify;
-    align-self: center;
-  }
+.diferencial-dentro > div > h1{
+  font-size: 20px;
+}
+
+.diferencial-dentro > div > p{
+  font-size: 22px;
+  width: 90%;
+  text-align: justify;
+  align-self: center;
+}
 
 .img-diferencial{
-  width: 20%;
+  width: 70%;
   align-self: center;
   border-radius: 5%;
   transition: transform 0.2s ease;
@@ -554,6 +561,10 @@
       margin: 50px 0px;
     }
 
+    .depoimentos-mobile{
+      width: 100%;
+    }
+
 .title-dep{
   display: flex;
   flex-flow: column nowrap;
@@ -609,16 +620,20 @@
 
 .box-dep{
   background-color: white;
-  width: 200px;
-  padding: 25px 15px;
+  width: 70%;
+  height: 100%;
+  flex: 0 0 20em;
   border-radius: 5%;
-  transition: transform 0.2s ease;
+
   color: black;
 }
 
-.data-dep{
-  color: gray;
+.low-dep > p{
   font-size: 14px;
+}
+
+.low-dep{
+  padding: 10px;
 }
 
     .top-dep{
@@ -630,7 +645,7 @@
     }
 
     .top-dep > img{
-      width: 50%;
+      width: 30%;
       height: 40%;
       border-radius: 50%;
       align-self: center;
@@ -641,7 +656,7 @@
     }
 
 .stars > p{
-  margin: 10px 0px;
+  margin: 10px 0px 10px 0px;
 }
 
 
@@ -666,48 +681,68 @@
    justify-content: space-around;
    align-items: center;
    text-align: center;
+
+ }
+
+ .mapBox{
+  width: 350px;
+  height: 350px;
+  align-self: center;
  }
 
     .logo-footer{
       width: 30%;
-      }
-
-    .text-footer > h1{
-      font-family: "Michroma", sans-serif;
-      font-weight: 100;
-      font-style: normal;
-    }
-    
-    .text-footer > p{
-      font-family: "League Spartan", sans-serif;
-      font-optical-sizing: auto;
-      font-weight: 200;
-      font-style: normal;
-    }
-    
-    .rede-social{
-      background-color: transparent;
-      border: none;
     }
 
-    .low-footer{
-      width: 100%;
-      align-items: center;
-      font-family: "League Spartan", sans-serif;
-      font-optical-sizing: auto;
-      font-weight: 200;
-      font-style: normal;
-    }
+ .text-footer{
+   width: 80%;
+   align-items: center;
+   
+ }
 
-    .low-footer > p{
-      display: flex;
-      flex-flow: row nowrap;
-      justify-content: center;
-    }
+ .map-footer{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  margin-bottom: 30px;
+ }
 
-    .hr{
-      max-width: 95%;
-    }
+ .text-footer > h1{
+   font-family: "Michroma", sans-serif;
+   font-weight: 100;
+   font-style: normal;
+ }
+ 
+ .text-footer > p{
+   font-family: "League Spartan", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 200;
+   font-style: normal;
+ }
+ 
+.rede-social{
+   background-color: transparent;
+   border: none;
+}
+
+.low-footer{
+   width: 100%;
+   align-items: center;
+   font-family: "League Spartan", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 200;
+   font-style: normal;
+}
+
+.low-footer > p{
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: center;
+}
+
+.hr{
+   max-width: 95%;
+}
 
     .michroma-regular {
       font-family: "Michroma", sans-serif;
