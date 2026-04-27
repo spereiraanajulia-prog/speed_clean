@@ -4,6 +4,10 @@
           display: none;
       }
 
+          html {
+  scroll-behavior: smooth;
+}
+
     body{
       width: 100%; 
       margin: 0px;
@@ -81,7 +85,7 @@
     }
 
     .logo{
-      width: 50px;
+      width: 60px;
       height: 50px;
     }
 
@@ -197,8 +201,8 @@
       flex-flow: column;
       align-items: center;
       justify-content: space-evenly;
-      margin: 50px 0px;
-      width: 100%
+
+      width: 100%;
     }
 
     .servicos h1{
@@ -207,11 +211,12 @@
 
  .cards{
   display: flex;
-  margin: 3em auto;
+  margin: auto;
   gap: .5em;
   width: 100%;
   overflow-x: auto;
-  scroll-marker-group: after;
+  scroll-behavior: smooth;
+  scroll-marker-group:after;
  }
 
  .cards::scroll-marker-group{
@@ -220,15 +225,31 @@
   gap: .5em;
  }
 
+  .card {
+    text-align: center;
+
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 30px;
+    margin: 0px 18px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    flex: 0 0 20em;
+  }
+
  .card::scroll-marker{
-  content: '';
-  height: 1em;
-  width: 1em;
-  background-color: #757575;
-  border-radius: 50%;
+      content: '';
+      padding: 1px 8px;
+      display: block;
+      height: 1em;
+      width: 1em;
+      border-radius: 50%;
+      background-color: #757575;
+      margin-top: 0px;
  }
 
- .card::scroll-marker:target-current{
+  .card::scroll-marker:target-current{
   background-color: #D4AF37;
  }
 
@@ -236,41 +257,15 @@
   display: none;
  }
 
- .card {
-    text-align: center;
-    width: 60%;
-    height: 50%;
-    overflow: hidden;
-    cursor: pointer;
-    border-radius: 30px;
-    margin: 20px;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    flex: 0 0 22em;
-}
-
 .card > h3{
   font-size: 20px;
 }
- /* .card {
-    text-align: center;
-    width: 60%;
-    height: 50%;
-    overflow: hidden;
-    cursor: pointer;
-    border-radius: 30px;
-    margin: 20px;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-} */
+
 
     .imagem {
         width: 100%;
-        height: 100%;
+        height: 300px;
         object-fit: cover;
-        transition: transform 0.5s ease;
         border-radius: 30px;
     }
 
@@ -423,6 +418,7 @@
 
 
     .diferenciais{
+      margin: 50px 0px 0px 0px;
       width: 100%;
       display: flex;
       flex-flow: column;
