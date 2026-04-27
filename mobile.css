@@ -121,7 +121,7 @@
     flex-direction: column ;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+
     }
 
   .pagina-inicial-right{
@@ -609,14 +609,16 @@
 
 .box-dep{
   background-color: white;
-  width: 20%;
+  width: 200px;
   padding: 25px 15px;
   border-radius: 5%;
   transition: transform 0.2s ease;
+  color: black;
 }
 
-.box-dep:hover{
-  transform: scale(1.05);
+.data-dep{
+  color: gray;
+  font-size: 14px;
 }
 
     .top-dep{
@@ -628,7 +630,7 @@
     }
 
     .top-dep > img{
-      width: 30%;
+      width: 50%;
       height: 40%;
       border-radius: 50%;
       align-self: center;
@@ -660,7 +662,7 @@
  .top-footer{
    width: 100%;
    display: flex;
-   flex-flow: row nowrap;
+   flex-flow: column nowrap;
    justify-content: space-around;
    align-items: center;
    text-align: center;
@@ -669,10 +671,6 @@
     .logo-footer{
       width: 30%;
       }
-
- .text-footer{
-   width: 30%;
- }
 
     .text-footer > h1{
       font-family: "Michroma", sans-serif;
