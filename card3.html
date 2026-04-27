@@ -9,6 +9,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=League+Spartan:wght@100..900&family=Michroma&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <script type="text/javascript">
+              window.onload = function(){
+              (function(d, script) {
+              script = d.createElement('script');
+              script.type = 'text/javascript';
+              script.async = true;
+              script.src = 'https://w.app/widget-v1/IRy5pf.js';
+              d.getElementsByTagName('head')[0].appendChild(script);
+              }(document));
+              };
+              </script>
 </head>
 <body>
     <section class="desktop">
@@ -109,62 +123,49 @@
     <section class="mobile">
          <header class="header">
             <div class="nav">
-                <img src="images/logo_header.png" alt="logo_clara" class="logo">
-        
-                   <div class="menu">
-                        <a href="index.html #sobre-nos">Sobre Nós</a>
-                        <a href="index.html #servicos">Serviços</a>
-                        <a href="index.html #diferenciais">Diferenciais</a>
-                        <a href="index.html #depoimentos">Depoimentos</a>
-                    </div>
-                 <div class="contato"><img src="images/call.png" alt="contato"><a href="#footer_card3">Contato</a></div>
-            </div>
+                <a href="index.html"><img src="images/logo_header.png" alt="logo_clara" class="logo"></a>
+                <div class="material-symbols-outlined" id="burguer" onclick="clickMenu()">menu</div>
+                <div class="menu_hamburguer" id="itens">
+                        <a href="#sobre-nos-mobile">Sobre Nós</a>
+                        <a href="#servicos-mobile">Serviços</a>
+                        <a href="#diferenciais-mobile">Diferenciais</a>
+                        <a href="#depoimentos-mobile">Depoimentos</a>
+                        
+                </div>
+            </div> 
         </header>
         <section class="servicos-saiba-mais">
-            <h1>Higienização Interna e Detalhamento</h1>
-        
             <div class="servicos-info">
-                <div class="servicos-left">
-                    <img src="images/card3.jpg" alt="Imagem do card 1" class="imagem-card1">
-                    <div class="preco">
-                        <h1>169,</h1>
-                        <p>90</p>
-                    </div>
-                </div>
-                <div class="servicos-rigth">
-                    <h1>Higienização Interna e Detalhamento</h1>
-                    <div class="informacoes">
+                <h1>Higienização Interna e Detalhamento</h1>
+                 <div class="informacoes">
                         <li><p>Limpeza Bactericida: Eliminação de ácaros, fungos e odores desagradáveis.</p></li>
                         <li><p>Tratamento de Couro: Limpeza profunda e hidratação para evitar rachaduras.</p></li>
                         <li><p>Detalhamento de Painel: Limpeza meticulosa de botões, difusores e telas.</p></li>
                         <li><p>Proteção UV: Aplicação de produtos que evitam o ressecamento de plásticos e borrachas.</p></li>
+                 </div>
+            </div>
+              <div class="servicos-abaixo">
+                    <div class="preco">
+                        <h1>169,</h1>
+                        <p>90</p>
                     </div>
+
                     <div class="botoes">
-                            <div class="botao-agendar"><a href="agendamento.html">Agendar</a></div>
-                            <div class="botao-voltar"><a href="index.html">Voltar</a></div>
-                        </div>
-                </div>
-            </div>
-                    <h2>Atenção: O valor final deste serviço pode variar conforme o modelo e ano do seu veículo.</h2>
-        </section>
-        <section class="nossos-trabalhos">
-            <h1>Nossos Trabalhos</h1>
-            <div class="fotos-trabalhos">
-                <div class="foto">
-                    <img src="images/higienizacao_carro1_antes.jpg" alt="" class="image-trabalho">
-                </div>
-                <div class="foto">
-                    <img src="images/higienizacao_carro1_depois.jpg" alt="" class="image-trabalho">
-                </div>
-                <div class="foto">
-                    <img src="images/higienizacao_carro2_antes.jpg" alt="" class="image-trabalho">
-                </div>
-                <div class="foto">
-                    <img src="images/higienizacao_carro2_depois.jpg" alt="" class="image-trabalho">
-                </div>
-            </div>
-        </section>
+                        <div class="botao-agendar"><a href="agendamento.html">Agendar</a></div>
+                        <div class="botao-voltar"><a href="index.html">Voltar</a></div>
+                    </div>
+              </div>
         
+            <section class="nossos-trabalhos">
+                <h1>Nossos Trabalhos</h1>
+                <div class="fotos-trabalhos">
+                    <div class="foto">
+                        <img src="images/antes_e_depois_3.jpg" alt="" class="image-trabalho">
+                    </div>
+                </div>
+            </section>
+
+
                <section class="footer" id="footer">
             <div class="top-footer">
                 
@@ -190,7 +191,7 @@
             </div>
         </section>
     </section>
-
+</section>
 <script src="script.js"></script>
 </body>
 </html>
