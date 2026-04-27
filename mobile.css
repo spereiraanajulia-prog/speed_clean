@@ -83,10 +83,10 @@
     }
 
     .carrossel{
-      margin: 50px 0px;;
-      width: 90%;
+      margin: 50px auto;
+      width: 100%;
       display: flex;
-      overflow-x: auto ;
+      overflow: hidden ;
     }
 
     .carrossel::-webkit-scrollbar{
@@ -98,7 +98,7 @@
       align-items: center;
       justify-content: center;
       gap: 1em;
-      animation: spin 5s infinite linear;  
+      animation: spin   10s infinite linear;  
       padding-right: 1em;  
     }
 
@@ -109,10 +109,20 @@
       align-content: center;
     }
 
-    @keyframes spin{
-      from {translate: 0;}
-      to{translate: -100%;}
-    }
+   @keyframes spin {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.img-mobile{
+  width: 100%;
+  height: auto;
+  display: flex;
+}
 
   .pagina-inicial{
     margin: 50px 0px;
