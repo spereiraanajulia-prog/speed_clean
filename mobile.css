@@ -104,9 +104,9 @@
     }
 
     .card-carrossel{
-      flex: 0 0 5em;
-      height: 5em;
-      padding: 1em;
+      flex: 0 0 20em;
+      height: auto;
+      padding: 50px 3px 0px 3px;
       align-content: center;
     }
 
