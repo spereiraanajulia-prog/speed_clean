@@ -638,9 +638,8 @@
           font-size: 14px;
     }
 
-.data-dep{
-  color: gray;
-  font-size: 11px;
+.stars > p{
+  margin: 10px 0px;
 }
 
 
