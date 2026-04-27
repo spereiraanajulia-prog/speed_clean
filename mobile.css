@@ -82,7 +82,7 @@
       height: 50px;
     }
 
-    .carrossel{
+    /* .carrossel{
       margin: 50px 0px;;
       width: 90%;
       display: flex;
@@ -112,7 +112,7 @@
     @keyframes spin{
       from {translate: 0;}
       to{translate: -100%;}
-    }
+    } */
 
   .pagina-inicial{
     margin: 50px 0px;
