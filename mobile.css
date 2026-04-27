@@ -130,6 +130,21 @@
   display: flex;
 }
 
+.title-inicio{
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+  width: 90%;
+}
+
+.title-inicio > h1{
+  font-size: 25px;
+}
+
+.title-inicio > p{
+  font-size: 18px;
+}
+
     .pagina-inicial{
         width: 100%;
         display: flex;
