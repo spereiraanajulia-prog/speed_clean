@@ -89,70 +89,47 @@
     color: white;
   }
 
-  .slider{
-    margin: 0 auto;
-    width: 100%;
-    height: auto;
-    padding: 100px 0px 0px 0px ;
-    overflow: hidden;
-    background-color: #012640;
-  }
+  .carrossel{
+      margin: 0px;
+      width: 100%;
+      display: flex;
+      overflow: hidden ;
+      padding: 20px 0px ;
+    }
 
-  .slider-content{
-    width: 400%;
-    height: auto;
-    display: flex;
-    animation-direction: alternate;
-  }
+    .carrossel::-webkit-scrollbar{
+      display: none;
+    }
 
-  .slider-content input{
-    display: none;
-  }
+    .grupo{
+      display: flex;
+      justify-content: center;
+      gap: 1em;
+      animation: spin   20s infinite linear;  
+      padding-right: 1em;  
+    }
 
-  .slide-box{
-    width: 25%;
-    height: auto;
-    position: relative;
-    text-align: center;
-    transition: 1s;
-  }
+    .card-carrossel{
+      flex: 0 0 20em;
+      height: auto;
+      padding: 50px 3px 0px 3px;
+      align-content: center;
+    }
 
-  .nav-manual, .nav-auto{
-    position: absolute;
-    width: 100%;
-    margin-top: 35%;
-    display: flex;
-    justify-content: center;
-  }
-
-  .nav-manual .manual-btn, .nav-auto div{
-    border: 1px solid #D4AF37;
-    padding: 10px;
-    border-radius: 50%;
-    margin: 5px;
-    cursor: pointer;
-    transition: 0.2s;
-  }
-
-  .nav-manual .manual-btn:hover{
-    background-color: #D4AF37;
+   @keyframes spin {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
   }
 
   .img-desktop{
-    height: 550px;
+    width: 1200px;
+    height: 650px;
   }
 
-  #radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2{
-    background-color: #D4AF37;
-  }
-
-  #radio1:checked ~ .primeiro{
-    margin-left: 0%;
-  }
-
-  #radio2:checked ~ .primeiro{
-    margin-left: -25%;
-  }
 
   body{
     width: 100%; 
@@ -559,6 +536,10 @@
     border-radius: 20px;
     cursor: pointer;
     transition: 0.3s;
+  }
+
+  form > a{
+    text-decoration: none;
   }
 
   .btn-confirmar:hover {
