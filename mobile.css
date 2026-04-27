@@ -14,6 +14,7 @@
     .header{
          background-color: #003E74;
         position: fixed;
+        z-index: 100;
         width: 100%;
         align-items: center;
         margin-top: 0px;
@@ -639,6 +640,7 @@
       border-radius: 50%;
       background-color: #757575;
       margin-top: -35px;
+
     }
 
         .box-dep::scroll-marker:target-current{
