@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=League+Spartan:wght@100..900&family=Michroma&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
     <script type="text/javascript">
               window.onload = function(){
               (function(d, script) {
@@ -27,12 +30,12 @@
             <div class="nav">
                 <a href="index.html"><img src="images/logo_header.png" alt="logo_clara" class="logo"></a>
         
-                <div class="menu">
-                    <a href="#sobre-nos">Sobre Nós</a>
-                    <a href="#servicos">Serviços</a>
-                    <a href="#diferenciais">Diferenciais</a>
-                    <a href="#depoimentos">Depoimentos</a>
-                </div>
+                 <div class="menu">
+                        <a href="index.html #sobre-nos">Sobre Nós</a>
+                        <a href="index.html #servicos">Serviços</a>
+                        <a href="index.html #diferenciais">Diferenciais</a>
+                        <a href="index.html #depoimentos">Depoimentos</a>
+                    </div>
                 <div class="contato"><img src="images/call.png" alt="contato"><a href="#footer">Contato</a></div>
             </div>
         </header>
@@ -49,7 +52,7 @@
                 <div class="container-formulario">
                     <form>
                         <div class="campo">
-                        <p><label for="nome"><p>Nome</label>
+                        <label for="nome"><p>Nome</p></label>
                         <input type="text" id="nome">
                         </div>
                         <div class="campo">
@@ -59,7 +62,7 @@
                         <div class="campo">
                         <label for="servico"><p>Serviço De Interesse</p></label>
                         <select id="servico">
-                            <option>Lavagem Técnica Profissional</option>
+                            <option><p>Lavagem Técnica Profissional</p></option>
                             <option><p>Correção de Pintura e Polimento</p></option>
                             <option><p>Higienização Interna e Detalhamento</p></option>
                             <option><p> Proteção de Pintura e Selagem</p></option>
@@ -113,29 +116,28 @@
 
     <!-- MOBILE -->
     <section class="mobile">
-              <header class="header">
+        <section class="mobile">
+       <header class="header">
             <div class="nav">
-                <img src="images/logo_header.png" alt="logo_clara" class="logo">
-        
-                   <div class="menu">
-                        <a href="index.html #sobre-nos">Sobre Nós</a>
-                        <a href="index.html #servicos">Serviços</a>
-                        <a href="index.html #diferenciais">Diferenciais</a>
-                        <a href="index.html #depoimentos">Depoimentos</a>
+                <a href="index.html"><img src="images/logo_header.png" alt="logo_clara" class="logo"></a>
+                <div class="material-symbols-outlined" id="burguer" onclick="clickMenu()">menu</div>
+                <div class="menu_hamburguer" id="itens">
+                        <a href="index.html #sobre-nos-mobile">Sobre Nós</a>
+                        <a href="index.html #servicos-mobile">Serviços</a>
+                        <a href="index.html #diferenciais-mobile">Diferenciais</a>
+                        <a href="index.html #depoimentos-mobile">Depoimentos</a>
                     </div>
-                 <div class="contato"><img src="images/call.png" alt="contato"><a href="#footer_agendamento">Contato</a></div>
-            </div>
-        </header>
+                </div> 
+            </header>
         
           <section class="agendamento">
-            <div class="agendamentos-left">
+            <div class="agendamentos-cima">
                 <h1>Agende Seu Serviço De Preferência</h1>
                 <p>Descreva o serviço e envie foto(s) pelo WhatsApp para avaliação precisa.</p>
-                <div class="imagem-agendamento"><img src="images/imagem-agendamento.jpg" alt=""></div>
             </div>
         
             <div class="formulario">
-                <h1>Agendar</h1>
+            
                 <div class="container-formulario">
                     <form>
                         <div class="campo">
@@ -166,32 +168,30 @@
                 </div>
             </div>
           </section>
-        <section class="footer" id="footer">
-                <div class="top-footer">
-                    <div class="text-footer">
-                        <h1>Encontre-nos</h1>
-                        <p>R. Onze de Junho, 1318 - Operário, Novo Hamburgo - RS</p>
-                        <img src="images/mapa.jpg" alt="">
-                    </div>
-        
-                        <img src="images/logo.png" alt="logo-footer"  class="logo-footer">
-        
-                    <div class="text-footer">
-                        <h1>Siga-nos</h1>
-                        <button class="rede-social"><a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png" alt="instagram" ></a></button>
-                        <button class="rede-social"><a href="https://www.tiktok.com/pt-BR/" target="_blank"><img src="images/tik-tok.png" alt="tiktok"></a></button>
-                        <button class="rede-social"><a href="https://x.com/" target="_blank"><img src="images/twitter.png" alt="twitter"></button></a>
-                        <button class="rede-social"><a href="https://www.facebook.com/?locale=pt_BR" target="_blank"><img src="images/facebook.png" alt="facebook"></a></button>
+         <section class="footer" id="footer">
+            <div class="top-footer">
+                
+                <div class="text-footer">
                     <h1>Contatos</h1>
                     <p>(51) 99677-6564</p>
                     <p>Segunda - Sábado · 08:00 - 18:00</p>
-                    </div>
+                    <button class="rede-social"><a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png" alt="instagram" ></a></button>
+                    <button class="rede-social"><a href="https://www.tiktok.com/pt-BR/" target="_blank"><img src="images/tik-tok.png" alt="tiktok"></a></button>
+                    <button class="rede-social"><a href="https://x.com/" target="_blank"><img src="images/twitter.png" alt="twitter"></button></a>
+                    <button class="rede-social"><a href="https://www.facebook.com/?locale=pt_BR" target="_blank"><img src="images/facebook.png" alt="facebook"></a></button>
                 </div>
-                <div class="low-footer">
-                    <hr class="hr">
-                    <p> &copy 2026 Speed Clean Ltda - Todos os direitos reservados</p>
+        
+                <div class="text-footer map-footer">
+                    <h1>Encontre-nos</h1>
+                    <p>R. Onze de Junho, 1318 - Operário, Novo Hamburgo - RS</p>
+                    <div class="mapBox"><iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1308.220180886488!2d-46.79196967617632!3d-21.965076821079567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sunifae!5e0!3m2!1spt-BR!2sbr!4v1776977293264!5m2!1spt-BR!2sbr" width="350" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
                 </div>
-            </section>
+            </div>
+            <div class="low-footer">
+                <hr class="hr">
+                <p> &copy 2026 Speed Clean Ltda - Todos os direitos reservados</p>
+            </div>
+        </section>
     </section>
 
 <script src="script.js"></script>

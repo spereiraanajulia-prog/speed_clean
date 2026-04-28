@@ -526,35 +526,28 @@
 
     .agendamento{
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       width: 100%;
       padding: 100px 0px 0px 0px;
     }
 
-    .agendamentos-left{
+    .agendamentos-cima{
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
+      justify-content: center;
+      align-items: center;
       padding: 0px 30px 0px;
+      text-align: center;
+      width: 80%;
     }
 
-    .agendamentos-left > img{
-      width: 30%;
-      height: 40%;
-      padding: 50px 0px 0px 0px;
-    }
-
-    .agendamentos-left > p{
+    .agendamentos-cima > p{
       font-size: 20px;
-      text-align: center;
-    }
+      width: 80%;
+       }
 
-    .agendamentos-left > h1{
-      font-size: 40px;
-      text-align: center;
-    }
 
     .formulario{
       display: flex;
@@ -565,13 +558,18 @@
       color: rgb(255, 255, 255);
       padding: 30px;
       border-radius: 30px;
-      margin: 50px 50px 50px 50px;
+      margin: 0px 50px 50px 50px;
+    }
+
+    form > a{
+      text-decoration: none;
+    
     }
 
     .container-formulario {
       padding: 30px;
       border-radius: 20px;
-      width: 350px;
+      width: 100%;
     }
 
     label {
@@ -848,6 +846,13 @@
     }
 
     a{
+      font-family: "League Spartan", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: weight;
+      font-style: normal;
+    }
+
+    label{
       font-family: "League Spartan", sans-serif;
       font-optical-sizing: auto;
       font-weight: weight;
