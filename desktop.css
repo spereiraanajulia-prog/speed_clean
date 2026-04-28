@@ -434,7 +434,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to right, #D4AF37, #A67C00, #b38728);
+    background: linear-gradient(to right, #8a701a, #86743d, #8a701a);
     border-radius: 30px;
     height: 40%;
     width: 100px;
@@ -457,7 +457,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 100px 0px 0px 0px;
+    padding: 100px 0px 50px 0px;
   }
 
   .agendamentos-left{
